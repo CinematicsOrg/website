@@ -8,6 +8,7 @@ export default {
     extend: {
       height: {
         'def': '861px',
+        "contdef": "1496px"
       }
     },
     colors: {
@@ -25,6 +26,7 @@ export default {
     },
     width: {
       'def': '490px',
+      'contdef': "1440px"
     }
   },
   plugins: [],
