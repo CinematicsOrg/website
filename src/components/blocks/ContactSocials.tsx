@@ -9,38 +9,38 @@ const ContactSocials = () => {
     <div className="bg-lblack h-[360px] py-[54px] px-[140px]">
       <div className="flex items-center justify-between h-[180px]">
         <div className="h-[59px]">
-          <p className="h-[39px] font-[32px] font-medium font-inter">
+          <p className="h-[39px] text-[32px] font-medium font-inter">
             Social Media
           </p>
-          <p className="font-poppins   h-[30px] font-[20px]">
+          <p className="font-poppins   h-[30px] text-[20px]">
             <YouTubeIcon />
             cinematicsng
           </p>
-          <p className="font-poppins  h-[30px] font-[20px]">
+          <p className="font-poppins  h-[30px] text-[20px]">
             <InstagramIcon />
             cinematicsng
           </p>
         </div>
         <div className="h-[59px]">
-          <p className="h-[39px] font-[32px] font-medium font-inter">
+          <p className="h-[39px] text-[32px] font-medium font-inter">
             Send us a mail
           </p>
-          <p className="font-poppins h-[30px] font-[20px]">
+          <p className="font-poppins h-[30px] text-[20px]">
             <EmailOutlinedIcon />
             cinematicsng@gmail.com
           </p>
-          <p className="font-poppins h-[30px] font-[20px]">
+          <p className="font-poppins h-[30px] text-[20px]">
             <EmailOutlinedIcon />
             info@cinematicsng.com
           </p>
         </div>
         <div className="h-[59px]">
-          <p className="h-[39px] font-[32px] font-medium font-inter">Call Us</p>
-          <p className="font-poppins h-[30px] font-[20px]">
+          <p className="h-[39px] text-[32px] font-medium font-inter">Call Us</p>
+          <p className="font-poppins h-[30px] text-[20px]">
             <AddIcCallOutlinedIcon />
             +2349030003360
           </p>
-          <p className="font-poppins h-[30px] font-[20px]">
+          <p className="font-poppins h-[30px] text-[20px]">
             <AddIcCallOutlinedIcon />
             +2348032008916
           </p>

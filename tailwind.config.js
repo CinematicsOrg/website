@@ -18,7 +18,8 @@ export default {
     fontFamily:{
       dancing: ["Dancing Script", "cursive"],
       poppins: ['Poppins', "sans-serif"],
-      inter: ["Inter", "sans-serif" ]
+      inter: ["Inter", "sans-serif" ],
+      roboto: ["Roboto", "sans-serif"]
     },
     fontSize: {
       twentyFour: "24px",

@@ -5,6 +5,7 @@ import Services from '../pages/Services';
 import Gallery from '../pages/Gallery';
 import Contact from '../pages/Contact';
 import NotFoundError from '../pages/NotFoundError';
+import Book from '../pages/Book';
 
 const ManiRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const ManiRoutes = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/book" element={<Book />} />
         <Route path="*" element={<NotFoundError />} />
       </Routes>
     </BrowserRouter>

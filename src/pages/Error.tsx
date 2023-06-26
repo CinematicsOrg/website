@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from '../components/blocks/Container';
 
 const Error = () => {

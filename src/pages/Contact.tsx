@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar';
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/blocks/ContactForm';
 import Footer from '../components/blocks/Footer';
 import ContactSocials from '../components/blocks/ContactSocials';
 
