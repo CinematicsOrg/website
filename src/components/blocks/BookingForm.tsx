@@ -68,9 +68,7 @@ const BookingForm = () => {
         ></textarea>
 
         <div className="flex justify-center">
-          <Button style="flex items-center w-[259px] h-[74px] py-5 px-10 justify-center font-medium bg-dred ">
-            Submit
-          </Button>
+          <Button>Submit</Button>
         </div>
       </form>
     </div>

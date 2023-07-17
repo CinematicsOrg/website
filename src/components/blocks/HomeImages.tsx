@@ -5,8 +5,8 @@ interface HomeImagesProps {
 }
 
 const HomeImages = ({ ImageList }: HomeImagesProps) => {
-  const content = ImageList.map((images) => {
-    return <Image classDef={images} />;
+  const content = ImageList.map((image) => {
+    return <Image key={image} classDef={image} />;
   });
   return (
     <div className="grid grid-cols-3 grid-rows-2 gap-7 h-[791px] my-[54px]">

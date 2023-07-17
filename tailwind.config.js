@@ -13,6 +13,7 @@ export default {
     },
     colors: {
       dred: '#A60808',
+      dredLight: "#e33636",
       lblack: '#161517'
     },
     fontFamily:{
@@ -27,7 +28,8 @@ export default {
     },
     width: {
       'def': '490px',
-      'contdef': "1440px"
+      'contdef': "1440px",
+      'full': '100%'
     }
   },
   plugins: [],
