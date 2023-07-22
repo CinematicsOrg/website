@@ -2,11 +2,20 @@ interface ImageProps {
   content?: string;
   classDef?: string;
   paragraphClassDef?: string;
+  clicked?: () => void;
 }
 
-const Image = ({ classDef, content, paragraphClassDef }: ImageProps) => {
+const Image = ({
+  classDef,
+  content,
+  paragraphClassDef,
+  clicked,
+}: ImageProps) => {
   return (
-    <div className={`grid content-end bg-cover bg-center ${classDef} h-full`}>
+    <div
+      onClick={clicked}
+      className={`grid content-end bg-cover bg-center ${classDef} h-full`}
+    >
       <div>
         <p className={paragraphClassDef}>{content}</p>
       </div>

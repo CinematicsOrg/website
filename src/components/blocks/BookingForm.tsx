@@ -64,7 +64,7 @@ const BookingForm = () => {
           MORE INFORMATION
         </label>
         <textarea
-          className={`h-[300px] mb-[45px] text-[black] text-[20px] p-2`}
+          className={`h-[300px] mb-[45px] text-[black] text-[20px] p-2 resize-none`}
         ></textarea>
 
         <div className="flex justify-center">

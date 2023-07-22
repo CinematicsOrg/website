@@ -5,7 +5,7 @@ import ContactSocials from '../components/blocks/ContactSocials';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="bg-cover bg-[url('images/cinematics_contactbackground.png')]">
       <Navbar logoPath="/images/cinematics_logo.png" />
       <div className="flex flex-cols-2 h-[926px]">
         <ContactForm />

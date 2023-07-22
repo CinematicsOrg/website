@@ -6,6 +6,8 @@ import Gallery from '../pages/Gallery';
 import Contact from '../pages/Contact';
 import NotFoundError from '../pages/NotFoundError';
 import Book from '../pages/Book';
+import WeddingPackages from '../pages/WeddingPackages';
+import CorporateEvents from '../pages/CorporateEvents';
 
 const ManiRoutes = () => {
   return (
@@ -17,6 +19,8 @@ const ManiRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/wedding-package" element={<WeddingPackages />} />
+        <Route path="/corporate-events" element={<CorporateEvents />} />
         <Route path="*" element={<NotFoundError />} />
       </Routes>
     </BrowserRouter>

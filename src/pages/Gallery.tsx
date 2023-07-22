@@ -1,7 +1,11 @@
+import Navbar from '../components/Navbar';
+
 const Gallery = () => {
   return (
     <div>
-      <h1>Gallery</h1>
+      <div>
+        <Navbar logoPath="/images/cinematics_logo.png" />
+      </div>
     </div>
   );
 };

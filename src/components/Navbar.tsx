@@ -4,7 +4,11 @@ export type NavbarProps = {
   logoPath?: string;
 };
 
-const links = [
+interface ILink {
+  path: string;
+  text: string;
+}
+const links: ILink[] = [
   { path: '/', text: 'Home' },
   { path: '/about', text: 'About Us' },
   { path: '/gallery', text: 'Gallery' },
@@ -16,9 +20,22 @@ const links = [
 const Navbar = ({ logoPath }: NavbarProps) => {
   const location = useLocation();
 
+  const locationDetector = (link: ILink) => {
+    if (location.pathname === link.path) {
+      return 'text-dred font-bold';
+    } else if (
+      (location.pathname === '/wedding-package' && link.path === '/services') ||
+      (location.pathname === '/corporate-events' && link.path === '/services')
+    ) {
+      return 'text-dred font-bold';
+    } else {
+      return '';
+    }
+  };
+
   return (
     <nav className="flex items-center justify-between py-4 px-8 h-20">
-      <div className="flex items-center">
+      <div className="flex items-center hover:border-transparent hover:shadow-sm">
         <Link to="/">
           <img className="h-6 w-auto md:h-8 lg:h-9" src={logoPath} alt="Logo" />
         </Link>
@@ -27,9 +44,9 @@ const Navbar = ({ logoPath }: NavbarProps) => {
         {links.map((link) => (
           <div
             key={link.path}
-            className={`ml-6 ${
-              location.pathname === link.path ? 'text-dred font-bold' : ''
-            }`}
+            className={`ml-6 hover:border-transparent hover:shadow-sm ${locationDetector(
+              link
+            )}`}
           >
             <Link to={link.path}>
               <span>{link.text}</span>
