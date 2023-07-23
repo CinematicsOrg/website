@@ -25,7 +25,9 @@ const Navbar = ({ logoPath }: NavbarProps) => {
       return 'text-dred font-bold';
     } else if (
       (location.pathname === '/wedding-package' && link.path === '/services') ||
-      (location.pathname === '/corporate-events' && link.path === '/services')
+      (location.pathname === '/corporate-events' &&
+        link.path === '/services') ||
+      (location.pathname === '/video-booth' && link.path === '/services')
     ) {
       return 'text-dred font-bold';
     } else {

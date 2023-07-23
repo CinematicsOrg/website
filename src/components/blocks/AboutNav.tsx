@@ -77,7 +77,7 @@ const AboutNav = () => {
   });
 
   return (
-    <div className="h-[243px] py-[54px] px-[80px] ">
+    <div className=" flex flex-col justify-between h-[243px] py-[54px] px-[80px] ">
       <div className="flex justify-center relative">
         {navContent}
         <div

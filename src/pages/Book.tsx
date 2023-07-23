@@ -13,7 +13,7 @@ const ImageList = [
 const Book = () => {
   const handleScrollToSection = (id: string) => {
     const section = document.querySelector(id);
-    console.log('it got here');
+
     section?.scrollIntoView({ behavior: 'smooth' });
   };
   const content = ImageList.map((image) => {
@@ -23,16 +23,16 @@ const Book = () => {
     <div>
       <div className="bg-[white] text-[black] font-inter">
         <Navbar logoPath="/images/cinematics_logo2.png" />
-        <div className="">
-          <div className="flex flex-col h-[336px] text-center">
-            <p className="h-[154px] text-[64px] font-medium">
+        <div className="px-[80px]">
+          <div className="flex flex-col text-center">
+            <div className="text-[64px] font-medium mb-[24px]">
               Book A CINEMATICS Experience Today
-            </p>
-            <p className="h-[60px] text-[20px]">
+            </div>
+            <div className="text-[20px] mb-[24px]">
               Join us in a flash to turn your dreams into reality. Step into the
               spotlight and let us capture your incredible style. Book now and
               let the magic begin!
-            </p>
+            </div>
             <div className="flex justify-center">
               <Button clicked={() => handleScrollToSection('#book')}>
                 Book a session

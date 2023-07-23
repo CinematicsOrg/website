@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import CorporateEventBlock from '../components/blocks/CorporateEventBlock';
 import Footer from '../components/blocks/Footer';
 import PackageAddons from '../components/blocks/PackageAddons';
+import ServiceTitle from '../components/blocks/ServiceTitle';
 
 const proExecutiveFeaturesList = [
   'Press conference',
@@ -132,19 +133,17 @@ const CorporateEvents = () => {
     <div className="text-[black] bg-[white]">
       <Navbar logoPath="/images/cinematics_logo2.png" />
       <div className="mx-[80px]">
-        <div className="text-center leading-[44px] text-[64px] font-bold font-dancing mt-[45px] mb-[45px] ">
-          Corporate Event Videography
-        </div>
-        <div className="font-inter text-[20px] leading-[30px] mt-[45px]">
-          Experience the realization of your dreams with us in no time as we
+        <ServiceTitle
+          title="Corporate Event Videography"
+          description="Experience the realization of your dreams with us in no time as we
           specialize in capturing and immortalizing moments, crafting
           beautifully told stories through stunning visuals. To cater to the
           diverse needs of our esteemed clients, we offer a range of meticulous
           designed packages under our specialized service. Each package has been
           thoughtfully curated to provide a unique and personalized experience,
           ensuring that your specific requirements are met with utmost precision
-          and creativity.
-        </div>
+          and creativity."
+        />
         {content}
         <PackageAddons />
       </div>

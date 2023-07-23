@@ -24,6 +24,7 @@ const serviceList = [
   {
     img: `col-span-2 bg-[url('/images/cinematics_photobooth.png')]`,
     content: 'Photobooth & Videobooth',
+    clickPath: '/video-booth',
   },
   {
     img: `bg-[url('/images/cinematics_reality.png')]`,

@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/blocks/Footer';
 import PackageAddons from '../components/blocks/PackageAddons';
+import ServiceTitle from '../components/blocks/ServiceTitle';
 import WeddingVideoBlock from '../components/blocks/WeddingVideoBlock';
 
 const premiumPlatinumFeaturesList = [
@@ -225,16 +226,14 @@ const WeddingPackages = () => {
     <div className="text-[black] bg-[white]">
       <Navbar logoPath="/images/cinematics_logo2.png" />
       <div className="mx-[80px]">
-        <div className="text-center leading-[44px] text-[64px] font-bold font-dancing mt-[45px] mb-[45px] ">
-          Wedding Video Packages
-        </div>
-        <div className="font-inter text-[20px] leading-[30px] mt-[45px]">
-          We transform your wedding documentation to a creative, compelling and
+        <ServiceTitle
+          title="Wedding Video Packages"
+          description="We transform your wedding documentation to a creative, compelling and
           inspiring story as we pay attention to every detail of your wedding.
           Each package has been thoughtfully curated to provide a unique and
           personalized experience, ensuring that your specific requirements are
-          met with utmost precision and creativity.
-        </div>
+          met with utmost precision and creativity."
+        />
         {content}
         <PackageAddons />
       </div>

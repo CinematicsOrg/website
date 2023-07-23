@@ -8,6 +8,7 @@ import NotFoundError from '../pages/NotFoundError';
 import Book from '../pages/Book';
 import WeddingPackages from '../pages/WeddingPackages';
 import CorporateEvents from '../pages/CorporateEvents';
+import VideoBooth from '../pages/VideoBooth';
 
 const ManiRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const ManiRoutes = () => {
         <Route path="/book" element={<Book />} />
         <Route path="/wedding-package" element={<WeddingPackages />} />
         <Route path="/corporate-events" element={<CorporateEvents />} />
+        <Route path="/video-booth" element={<VideoBooth />} />
         <Route path="*" element={<NotFoundError />} />
       </Routes>
     </BrowserRouter>
