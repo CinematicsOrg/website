@@ -7,7 +7,7 @@ const navList = [
   },
   {
     id: 2,
-    nav: 'Vission',
+    nav: 'Vision',
   },
   {
     id: 3,
@@ -87,10 +87,14 @@ const AboutNav = () => {
       </div>
 
       <div className="">
-        <p className={`flex justify-center ${showValue ? '' : 'hidden'}`}>
+        <p
+          className={`flex justify-center text-[24px] ${
+            showValue ? '' : 'hidden'
+          }`}
+        >
           {value}
         </p>
-        <div className={`${showDiv ? '' : 'hidden'}`}>
+        <div className={`text-[24px] ${showDiv ? '' : 'hidden'}`}>
           <div className="flex">{divContent}</div>
         </div>
       </div>

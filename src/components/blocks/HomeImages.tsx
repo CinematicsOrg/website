@@ -9,7 +9,7 @@ const HomeImages = ({ ImageList }: HomeImagesProps) => {
     return <Image key={image} classDef={image} />;
   });
   return (
-    <div className="grid grid-cols-3 grid-rows-2 gap-7 h-[791px] my-[54px]">
+    <div className="flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 md:gap-7 md:h-[791px] md:my-[54px]">
       {content}
     </div>
   );

@@ -32,14 +32,14 @@ const VideoBooth = () => {
 
   const imageContent = ImageList.map((i, index) => {
     return (
-      <div className="mb-[32px]">
+      <div className="mb-[32px]" key={index}>
         <img src={i} alt="Image" />
       </div>
     );
   });
   return (
     <div className="text-[black] bg-[white]">
-      <Navbar logoPath="/images/cinematics_logo2.png" />
+      <Navbar />
       <div className="mx-[80px]">
         <ServiceTitle
           title="Photo & Video-booth Experience"

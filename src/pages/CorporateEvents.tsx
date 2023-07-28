@@ -131,7 +131,7 @@ const CorporateEvents = () => {
   });
   return (
     <div className="text-[black] bg-[white]">
-      <Navbar logoPath="/images/cinematics_logo2.png" />
+      <Navbar />
       <div className="mx-[80px]">
         <ServiceTitle
           title="Corporate Event Videography"

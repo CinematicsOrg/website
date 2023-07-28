@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div>
       <div className="bg-[white] text-[black] font-inter">
-        <Navbar logoPath="/images/cinematics_logo2.png" />
+        <Navbar />
         <div className="grid grid-cols-2 mx-[80px] mt-[54px] ">
           <div className="px-[37px] py-[38px] bg-[black]">
             <Image classDef={`bg-[url('images/cinematics_11.png')]`} />

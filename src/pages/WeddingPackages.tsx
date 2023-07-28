@@ -224,7 +224,7 @@ const WeddingPackages = () => {
   });
   return (
     <div className="text-[black] bg-[white]">
-      <Navbar logoPath="/images/cinematics_logo2.png" />
+      <Navbar />
       <div className="mx-[80px]">
         <ServiceTitle
           title="Wedding Video Packages"

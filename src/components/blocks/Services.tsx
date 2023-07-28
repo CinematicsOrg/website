@@ -1,36 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Image from '../Image';
-
-const serviceList = [
-  {
-    img: `bg-[url('images/cinematics_corporate.png')]`,
-    content: 'Corporate Event Videography',
-    clickPath: '/corporate-events',
-  },
-  {
-    img: `col-span-2 bg-[url('/images/cinematics_wedding.png')]`,
-    content: 'Wedding Videos',
-    clickPath: '/wedding-package',
-  },
-  {
-    img: `bg-[url('/images/cinematics_product.png')]`,
-    content: 'Product Activation',
-  },
-  {
-    img: `bg-[url('/images/cinematics_documentary.png')]`,
-    content: 'Documentary',
-  },
-  { img: `bg-[url('/images/cinematics_360.png')]`, content: '360 Videobooth' },
-  {
-    img: `col-span-2 bg-[url('/images/cinematics_photobooth.png')]`,
-    content: 'Photobooth & Videobooth',
-    clickPath: '/video-booth',
-  },
-  {
-    img: `bg-[url('/images/cinematics_reality.png')]`,
-    content: 'Reality Tv Show',
-  },
-];
+import { serviceList } from '../../utils/constants';
 
 const Services = () => {
   const navigate = useNavigate();
@@ -56,7 +26,7 @@ const Services = () => {
   });
 
   return (
-    <div className="grid grid-cols-3 grid-rows-3 gap-7 h-contdef text-[white] text-[24px]">
+    <div className="flex flex-col md:grid md:grid-cols-3 md:grid-rows-3 md:gap-7 md:h-contdef text-[white] text-[24px]">
       {content}
     </div>
   );

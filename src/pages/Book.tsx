@@ -22,7 +22,7 @@ const Book = () => {
   return (
     <div>
       <div className="bg-[white] text-[black] font-inter">
-        <Navbar logoPath="/images/cinematics_logo2.png" />
+        <Navbar />
         <div className="px-[80px]">
           <div className="flex flex-col text-center">
             <div className="text-[64px] font-medium mb-[24px]">
@@ -35,7 +35,7 @@ const Book = () => {
             </div>
             <div className="flex justify-center">
               <Button clicked={() => handleScrollToSection('#book')}>
-                Book a session
+                Book a Session
               </Button>
             </div>
           </div>

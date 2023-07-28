@@ -6,6 +6,7 @@ const Gallery = () => {
       <div>
         <Navbar logoPath="/images/cinematics_logo.png" />
       </div>
+      <div className="text-center font-bold text-[72px]">Coming soon......</div>
     </div>
   );
 };
