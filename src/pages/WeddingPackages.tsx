@@ -225,7 +225,7 @@ const WeddingPackages = () => {
   return (
     <div className="text-[black] bg-[white]">
       <Navbar />
-      <div className="mx-[80px]">
+      <div className="mx-[16px] md:mx-[80px]">
         <ServiceTitle
           title="Wedding Video Packages"
           description="We transform your wedding documentation to a creative, compelling and
@@ -235,7 +235,9 @@ const WeddingPackages = () => {
           met with utmost precision and creativity."
         />
         {content}
-        <PackageAddons />
+        <div className="py-[14px]">
+          <PackageAddons />
+        </div>
       </div>
       <div className="text-[white]">
         <Footer />

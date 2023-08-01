@@ -11,16 +11,16 @@ const ServiceList = ({ title, listItem, imgPath }: ServiceListProps) => {
     return <ServiceItem key={index}>{i}</ServiceItem>;
   });
   return (
-    <div>
-      <div className="h-[30px] text-[20px] font-medium leading-[30px] mb-[50px]">
+    <div className="">
+      <div className="text-[16px] md:text-[20px] font-medium md:leading-[30px] mt-[24px] mb-[8px] md:mb-[50px]">
         {title}
       </div>
-      <div className="grid grid-cols-2">{listContent}</div>
+      <div className="md:grid grid-cols-2">{listContent}</div>
       {imgPath ? (
         <img
           src={imgPath}
           alt="Image"
-          className="max-w-[100%] w-[100%] h-[350px] mt-[45px]"
+          className="object-cover max-w-[100%] w-[100%] h-[221px] md:h-[350px] md:mt-[45px]"
         />
       ) : null}
     </div>

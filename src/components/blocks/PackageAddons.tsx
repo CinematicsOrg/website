@@ -22,7 +22,7 @@ const addOns = {
 
 const PackageAddons = () => {
   return (
-    <div>
+    <div className="py-[24px]">
       <WeddingVideoBlock
         title={addOns.title}
         featuresList={addOns.featuresList}

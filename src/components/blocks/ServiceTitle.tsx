@@ -6,10 +6,10 @@ interface ServiceTitleProps {
 const ServiceTitle = ({ title, description }: ServiceTitleProps) => {
   return (
     <div>
-      <div className="text-center leading-[44px] text-[64px] font-bold font-dancing mt-[45px] mb-[45px] ">
+      <div className="text-center leading-[30px] text-[24px] md:leading-[44px] md:text-[64px] font-bold font-dancing mt-[10px] md:mt-[45px] md:mb-[45px] ">
         {title}
       </div>
-      <div className="font-inter text-[20px] leading-[30px] mt-[45px]">
+      <div className="font-inter text-[16px] md:text-[20px] leading-[24px] md:leading-[30px] mt-[10px] md:mt-[45px]">
         {description}
       </div>
     </div>

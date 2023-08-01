@@ -24,7 +24,7 @@ const CorporateEventBlock = ({
   };
   return (
     <div>
-      <div className="my-[45px] h-[44px] font-dancing font-bold text-[64px] leading-[44px]">
+      <div className="mt-[24px] mb-[8px] md:my-[45px] font-dancing font-bold text-[24px] leading-[30px] md:text-[64px] md:leading-[44px]">
         {title}
       </div>
       <div>

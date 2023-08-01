@@ -86,7 +86,7 @@ const goldDeliverablesList = [
 
 const packageList = [
   {
-    title: 'Premium Executive Package',
+    title: 'Pro Executive Package',
     featuresList: proExecutiveFeaturesList,
     featureImgPath: 'images/cinematics_proexecutivefeatures.png',
     deliverablesList: proExecutiveDeliverablesList,
@@ -95,7 +95,7 @@ const packageList = [
   {
     title: 'Executive Package',
     featuresList: executiveFeaturesList,
-    featureImgPath: 'images/cinematics_corporateexecutivefeatures.png',
+    featureImgPath: 'images/cinematics_corporateexecutivefeaturesList.png',
     deliverablesList: executiveDeliverablesList,
     deliverablesImgPath: 'images/cinematics_corporateexecutivedeliverables.png',
   },

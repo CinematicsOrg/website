@@ -26,7 +26,7 @@ const Book = () => {
         <div className="px-[80px]">
           <div className="flex flex-col text-center">
             <div className="text-[64px] font-medium mb-[24px]">
-              Book A CINEMATICS Experience Today
+              Book a CINEMATICS Experience Today
             </div>
             <div className="text-[20px] mb-[24px]">
               Join us in a flash to turn your dreams into reality. Step into the
@@ -45,7 +45,7 @@ const Book = () => {
         </div>
         <div id="book" className="h-[1174px] bg-lblack text-[white] py-[54px]">
           <p className="text-center font-bold font-roboto text-[36px] leading-[42px] mb-[60px]">
-            Book A Session
+            Book a Session
           </p>
           <BookingForm />
         </div>
