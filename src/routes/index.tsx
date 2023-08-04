@@ -9,6 +9,9 @@ import Book from '../pages/Book';
 import WeddingPackages from '../pages/WeddingPackages';
 import CorporateEvents from '../pages/CorporateEvents';
 import VideoBooth from '../pages/VideoBooth';
+import EventPhotography from '../pages/EventPhotography';
+import VirtualReality from '../pages/VirtualReality';
+import PhotoBooth from '../pages/PhotoBooth';
 
 const ManiRoutes = () => {
   return (
@@ -23,6 +26,9 @@ const ManiRoutes = () => {
         <Route path="/wedding-package" element={<WeddingPackages />} />
         <Route path="/corporate-events" element={<CorporateEvents />} />
         <Route path="/video-booth" element={<VideoBooth />} />
+        <Route path="/photo-booth" element={<PhotoBooth />} />
+        <Route path="/event-photography" element={<EventPhotography />} />
+        <Route path="/virtual-reality" element={<VirtualReality />} />
         <Route path="*" element={<NotFoundError />} />
       </Routes>
     </BrowserRouter>

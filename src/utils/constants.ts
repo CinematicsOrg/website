@@ -22,13 +22,18 @@ export const serviceList: IServiceContent[] = [
   },
   {
     img: `bg-[url('/images/cinematics_product.png')]`,
-    content: 'Product Activation',
+    content: 'Corporate Photography Package',
   },
   {
     img: `bg-[url('/images/cinematics_documentary.png')]`,
-    content: 'Documentary',
+    content: 'Event Photography Package',
+    clickPath: '/event-photography',
   },
-  { img: `bg-[url('/images/cinematics_360.png')]`, content: '360 Videobooth' },
+  {
+    img: `bg-[url('/images/cinematics_360.png')]`,
+    content: 'Virtual Reality Package',
+    clickPath: '/virtual-reality',
+  },
   {
     img: `col-span-2 bg-[url('/images/cinematics_photobooth.png')]`,
     content: 'Video Booth Package',
@@ -37,5 +42,12 @@ export const serviceList: IServiceContent[] = [
   {
     img: `bg-[url('/images/cinematics_reality.png')]`,
     content: 'Photo Booth Package',
+    clickPath: '/photo-booth',
   },
+];
+
+export const addOnsList = [
+  'Aditional photographer',
+  'Extra album ( Size 12x20 )',
+  'Extra album ( Size 12x24 )',
 ];

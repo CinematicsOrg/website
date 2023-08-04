@@ -20,7 +20,8 @@ const Navbar = ({ logoPath }: NavbarProps) => {
       (location.pathname === '/wedding-package' && link.path === '/services') ||
       (location.pathname === '/corporate-events' &&
         link.path === '/services') ||
-      (location.pathname === '/video-booth' && link.path === '/services')
+      (location.pathname === '/video-booth' && link.path === '/services') ||
+      (location.pathname === '/virtual-reality' && link.path === '/services')
     ) {
       return 'text-dred font-bold';
     } else {
