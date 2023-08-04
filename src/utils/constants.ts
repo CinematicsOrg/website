@@ -23,6 +23,7 @@ export const serviceList: IServiceContent[] = [
   {
     img: `bg-[url('/images/cinematics_product.png')]`,
     content: 'Corporate Photography Package',
+    clickPath: '/corporate-photography',
   },
   {
     img: `bg-[url('/images/cinematics_documentary.png')]`,

@@ -8,18 +8,15 @@ import { IGeneralServicePackage } from '../utils/interface';
 
 const ultimateFeaturesList = [
   '3 Photographers',
-  '3 Portraits for celebrant',
   '1 Photo album for couples (size 12x24)',
   'Unlimited edited pictures',
   'An online gallery link of the images',
   'Edited images in a flash drive',
-  '1 Photo album for family for family (size 12x16)',
   '12 hours coverage (Ideal for guest number of 100-1000)',
 ];
 
 const advancedFeaturesList = [
   '2 Photographers',
-  '2 Portraits for celebrant',
   '1 Photo album for couples (size 12x24)',
   'Unlimited edited pictures',
   'An online gallery link of the images',
@@ -29,18 +26,9 @@ const advancedFeaturesList = [
 
 const standardFeaturesList = [
   '1 Photographer',
-  '1 Portraits for celebrant',
   '1 Photo album for couples (size 12x24)',
   'Unlimited edited pictures',
   '6 hours coverage (Ideal for guest number of 20-100)',
-  'An online gallery link of the images',
-];
-
-const basicFeaturesList = [
-  '1 Photographer',
-  '1 Photo album for couples (size 12x20)',
-  'Edited pictures',
-  '6 hours coverage ( Ideal for guest number of 20-40)',
   'An online gallery link of the images',
 ];
 
@@ -72,18 +60,9 @@ const PackageList: IGeneralServicePackage[] = [
     hasDeliverableTitle: false,
     deliverablesImgPath: '/images/cinematics_photobooth1.png',
   },
-  {
-    title: 'Basic',
-    featuresList: basicFeaturesList,
-    hasFeaturesTitle: false,
-    hasFeaturesImg: false,
-    hasDeliverableImg: false,
-    hasDeliverableTitle: false,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
-  },
 ];
 
-const EventPhotography = () => {
+const CorporatePhotography = () => {
   const content = PackageList.map((i, index) => {
     return (
       <GeneralServiceBlock
@@ -105,7 +84,7 @@ const EventPhotography = () => {
     <div className="text-[black] bg-[white]">
       <Navbar />
       <div className="mx-[16px] pt-[24px] pb-[14px] md:mx-[80px]">
-        <ServiceTitle title="Event Photography Package" />
+        <ServiceTitle title="Corporate Photography Package" />
         <div>
           {content}
           <PackageAddons list={addOnsList} />
@@ -118,4 +97,4 @@ const EventPhotography = () => {
   );
 };
 
-export default EventPhotography;
+export default CorporatePhotography;

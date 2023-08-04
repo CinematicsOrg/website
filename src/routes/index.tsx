@@ -12,6 +12,7 @@ import VideoBooth from '../pages/VideoBooth';
 import EventPhotography from '../pages/EventPhotography';
 import VirtualReality from '../pages/VirtualReality';
 import PhotoBooth from '../pages/PhotoBooth';
+import CorporatePhotography from '../pages/CorporatePhotography';
 
 const ManiRoutes = () => {
   return (
@@ -25,6 +26,10 @@ const ManiRoutes = () => {
         <Route path="/book" element={<Book />} />
         <Route path="/wedding-package" element={<WeddingPackages />} />
         <Route path="/corporate-events" element={<CorporateEvents />} />
+        <Route
+          path="/corporate-photography"
+          element={<CorporatePhotography />}
+        />
         <Route path="/video-booth" element={<VideoBooth />} />
         <Route path="/photo-booth" element={<PhotoBooth />} />
         <Route path="/event-photography" element={<EventPhotography />} />
