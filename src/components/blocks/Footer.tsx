@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="h-[156px] md:h-56 bg-lblack">
+    <div className="md:h-56 bg-lblack">
       <div className="pt-[20px] md:pt-24 flex flex-col items-center justify-center">
         <Link to="/">
           <img

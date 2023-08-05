@@ -20,7 +20,15 @@ const NavDrawer = () => {
     }
   };
   return (
-    <div className="flex flex-col items-center text-center font-inter p-[12px] bg-[white] md:hidden">
+    <div
+      className="flex flex-col items-center w-[156px] text-center font-inter p-[12px] bg-[white] md:hidden"
+      style={{
+        position: 'absolute',
+        top: 'calc(70px + 12px)',
+        right: '0px',
+        zIndex: 10000,
+      }}
+    >
       {links.map((link) => (
         <div
           key={link.path}

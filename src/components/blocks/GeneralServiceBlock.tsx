@@ -56,6 +56,7 @@ const GeneralServiceBlock = ({
           <div>
             <GeneralServiceList
               title={hasDeliverableTitle ? 'Deliverables' : undefined}
+              // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
               listItem={deliverablesList!}
               imgPath={hasDeliverableImg ? deliverablesImgPath : undefined}
             />
