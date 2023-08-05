@@ -49,7 +49,7 @@ const AboutNav = () => {
 
   const navContent = navList.map((navItem) => (
     <div
-      className={`relative h-[42px] inline-flex items-center justify-center text-[36px] font-bold mx-[44px] cursor-pointer ${
+      className={`relative h-[24px] md:h-[42px] items-center justify-center mx-[20px] text-[18px] leading-[24px] md:text-[36px] font-bold md:mx-[44px] cursor-pointer ${
         activeNavItem === navItem.id ? 'text-dred' : ''
       }`}
       onClick={() => handleClicked(navItem.id)}
@@ -57,10 +57,7 @@ const AboutNav = () => {
     >
       {navItem.nav}
       {activeNavItem === navItem.id && (
-        <div
-          className="absolute bg-dred h-[2px] bottom-[-10px] z-40 left-0 right-0"
-          style={{ width: '100%' }}
-        />
+        <div className="absolute bg-dred h-[2px] bottom-[-30px] z-40 left-0 right-0 w-[100%]" />
       )}
     </div>
   ));
@@ -70,32 +67,29 @@ const AboutNav = () => {
   const divArray = divValue.split(',');
   const divContent = divArray.map((p) => {
     return (
-      <li className="mr-[20px] flex-grow" key={p}>
+      <li className="mb-[16px] mr-[20px] flex-grow" key={p}>
         {p}
       </li>
     );
   });
 
   return (
-    <div className=" flex flex-col justify-between h-[243px] py-[54px] px-[80px] ">
+    <div className="flex flex-col justify-between md:h-[243px] pt-[30px] pb-0 md:py-[54px] px-[16px] md:px-[80px] ">
       <div className="flex justify-center relative">
-        {navContent}
-        <div
-          className="absolute bg-[black] z-10 h-[1px] bottom-[-10px] left-0 right-0"
-          style={{ width: '100%' }}
-        />
+        <div className="flex">{navContent}</div>
+        <div className="absolute bg-[black] z-10 h-[1px] bottom-[-30px] left-0 right-0 w-[100%]" />
       </div>
 
-      <div className="">
+      <div className="text-[16px] md:text-[24px] mt-[31px] mb-[21px]">
         <p
-          className={`flex justify-center text-[24px] ${
+          className={`flex justify-center mt-[31px] ${
             showValue ? '' : 'hidden'
           }`}
         >
           {value}
         </p>
-        <div className={`text-[24px] ${showDiv ? '' : 'hidden'}`}>
-          <div className="flex">{divContent}</div>
+        <div className={`${showDiv ? '' : 'hidden'}`}>
+          <div className="mt-[31px]  md:flex">{divContent}</div>
         </div>
       </div>
     </div>
