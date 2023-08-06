@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import Button from '../Button';
 import FormInput from '../FormInput';
 import axios from 'axios';
+import Label from '../Label';
 
 const ContactForm = () => {
   const [name, setName] = useState<string>('');
@@ -48,9 +49,7 @@ const ContactForm = () => {
         onSubmit={(e) => handleFormSubmit(e)}
         ref={formRef}
       >
-        <label htmlFor="" className="mb-[8px]">
-          FULL NAME
-        </label>
+        <Label label="FULL NAME" />
         <FormInput
           name="Name"
           type="text"
@@ -60,9 +59,7 @@ const ContactForm = () => {
           changed={(e) => setName(e.target.value)}
         />
 
-        <label htmlFor="" className="mb-[8px]">
-          EMAIL
-        </label>
+        <Label label="EMAIL" />
         <FormInput
           type="email"
           name="Email"
@@ -72,9 +69,7 @@ const ContactForm = () => {
           changed={(e) => setEmail(e.target.value)}
         />
 
-        <label htmlFor="" className="mb-[8px]">
-          PHONE NUMBER
-        </label>
+        <Label label="PHONE NUMBER" />
         <FormInput
           type="text"
           name="Number"
@@ -84,9 +79,7 @@ const ContactForm = () => {
           changed={(e) => setPhone(e.target.value)}
         />
 
-        <label htmlFor="" className="mb-[8px]">
-          ENQUIRIES
-        </label>
+        <Label label="ENQUIRIES" />
         <textarea
           className={`h-[300px] mb-[45px] text-[black] text-[20px] p-2 resize-none`}
           name="Enquiries"

@@ -52,3 +52,13 @@ export const addOnsList = [
   'Extra album ( Size 12x20 )',
   'Extra album ( Size 12x24 )',
 ];
+
+export const eventTitleList = [
+  'VIRTUAL REALITY',
+  'PHOTO BOOTH',
+  'VIDEO BOOTH',
+  'EVENT PHOTOGRAPHY',
+  'WEDDING VIDEOGAPHY',
+  'CORPORATE PHOTOGRAPHY',
+  'CORPORATE EVENT VIDEOGRAPHY',
+];

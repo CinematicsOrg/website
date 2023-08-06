@@ -23,18 +23,21 @@ const Book = () => {
     <div>
       <div className="bg-[white] text-[black] font-inter">
         <Navbar />
-        <div className="px-[80px]">
+        <div className="px-[16px] md:px-[80px]">
           <div className="flex flex-col text-center">
-            <div className="text-[64px] font-medium mb-[24px]">
+            <div className="text-[24px] md:text-[64px] font-medium mb-[10px] md:mb-[24px]">
               Book a CINEMATICS Experience Today
             </div>
-            <div className="text-[20px] mb-[24px]">
+            <div className="text-[16px] md:text-[20px] mb-[10px] md:mb-[24px]">
               Join us in a flash to turn your dreams into reality. Step into the
               spotlight and let us capture your incredible style. Book now and
               let the magic begin!
             </div>
             <div className="flex justify-center">
-              <Button clicked={() => handleScrollToSection('#book')}>
+              <Button
+                style="w-full md:w-[auto]"
+                clicked={() => handleScrollToSection('#book')}
+              >
                 Book a Session
               </Button>
             </div>
@@ -43,8 +46,8 @@ const Book = () => {
         <div className="grid grid-cols-3 gap-[30px] h-[434px] py-[54px] px-[80px]">
           {content}
         </div>
-        <div id="book" className="h-[1174px] bg-lblack text-[white] py-[54px]">
-          <p className="text-center font-bold font-roboto text-[36px] leading-[42px] mb-[60px]">
+        <div id="book" className=" bg-lblack text-[white] py-[54px]">
+          <p className="text-center font-bold font-roboto text-[36px] leading-[42px] mb-[20px] md:mb-[60px]">
             Book a Session
           </p>
           <BookingForm />

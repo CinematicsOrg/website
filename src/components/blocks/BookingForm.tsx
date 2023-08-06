@@ -1,74 +1,95 @@
+import { useState } from 'react';
 import Button from '../Button';
+import Label from '../Label';
+import FormInput from '../FormInput';
+import CheckBox from '../CheckBox';
+import { eventTitleList } from '../../utils/constants';
 
 const BookingForm = () => {
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [phone, setPhone] = useState<string>('');
+  const [moreInfo, setMoreInfo] = useState<string>('');
+  const [eventDate, setEventDate] = useState<string>('');
+  const [eventTime, setEventTime] = useState<string>('');
+
+  const eventTitleContent = eventTitleList.map((i, index) => {
+    return <CheckBox key={index} labelName={i} name={i} value={i} />;
+  });
+
   return (
-    <div className="text-[white] px-[140px]">
+    <div className="text-[white] px-[16px] md:px-[140px]">
       <form className="flex flex-col">
-        <label htmlFor="" className="mb-[8px]">
-          FULL NAME
-        </label>
-        <input
+        <Label label="FULL NAME" />
+        <FormInput
+          name="Name"
           type="text"
-          className="h-[45px] mb-[45px] text-[black] text-[20px] p-2"
+          value={name}
+          placeholder="John Doe"
+          classDef="w-full"
+          changed={(e) => setName(e.target.value)}
         />
 
-        <label htmlFor="" className="mb-[8px]">
-          EMAIL
-        </label>
-        <input
-          type="text"
-          className="h-[45px] mb-[45px] text-[black] text-[20px] p-2"
+        <Label label="EMAIL" />
+        <FormInput
+          type="email"
+          name="Email"
+          value={email}
+          placeholder="Johndoe@email.com"
+          classDef="w-full"
+          changed={(e) => setEmail(e.target.value)}
         />
 
-        <label htmlFor="" className="mb-[8px]">
-          PHONE NUMBER
-        </label>
-        <input
+        <Label label="PHONE NUMBER" />
+        <FormInput
           type="text"
-          className="h-[45px] mb-[45px] text-[black] text-[20px] p-2"
+          name="Number"
+          value={phone}
+          placeholder="+2348080808080"
+          classDef="w-full"
+          changed={(e) => setPhone(e.target.value)}
         />
 
-        <label htmlFor="" className="mb-[8px]">
-          EVENT TITLE
-        </label>
-        <input
-          type="text"
-          className="h-[45px] mb-[45px] text-[black] text-[20px] p-2"
-        />
+        <Label label="EVENT TITLE" />
+        <div className="mb-[16px]">{eventTitleContent}</div>
 
-        <div className="grid grid-cols-2 gap-[53px]">
+        <div className="grid grid-cols-2 gap-[15px] md:gap-[53px]">
           <div className="flex flex-col">
-            <label htmlFor="" className="mb-[8px]">
-              EVENT DATE
-            </label>
-            <input
+            <Label label="EVENT DATE" />
+            <FormInput
               type="text"
+              name="Date"
+              value={eventDate}
+              classDef="w-full"
               placeholder="DD/MM/YY"
-              className="h-[45px] mb-[45px] text-[black] text-[20px] p-2"
+              changed={(e) => setEventDate(e.target.value)}
             />
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="" className="mb-[8px]">
-              EVENT TIME
-            </label>
-            <input
+            <Label label="EVENT TIME" />
+            <FormInput
               type="text"
+              name="Time"
+              value={eventTime}
+              classDef="w-full"
               placeholder="DURATION"
-              className="h-[45px] mb-[45px] text-[black] text-[20px] p-2"
+              changed={(e) => setEventTime(e.target.value)}
             />
           </div>
         </div>
 
-        <label htmlFor="" className="mb-[8px]">
-          MORE INFORMATION
-        </label>
+        <Label label="MORE INFORMATION" />
         <textarea
           className={`h-[300px] mb-[45px] text-[black] text-[20px] p-2 resize-none`}
+          name="Enquiries"
+          value={moreInfo}
+          placeholder="I would be booking for a month"
+          onChange={(e) => setMoreInfo(e.target.value)}
         ></textarea>
 
         <div className="flex justify-center">
-          <Button>Submit</Button>
+          <Button style="w-full md:auto">Submit</Button>
         </div>
       </form>
     </div>
