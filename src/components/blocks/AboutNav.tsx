@@ -74,13 +74,13 @@ const AboutNav = () => {
   });
 
   return (
-    <div className="flex flex-col justify-between md:h-[243px] pt-[30px] pb-0 md:py-[54px] px-[16px] md:px-[80px] ">
+    <div className="flex flex-col justify-between pt-[30px] pb-0 md:py-[54px] px-[16px] md:px-[80px] ">
       <div className="flex justify-center relative">
         <div className="flex">{navContent}</div>
         <div className="absolute bg-[black] z-10 h-[1px] bottom-[-30px] left-0 right-0 w-[100%]" />
       </div>
 
-      <div className="text-[16px] md:text-[24px] mt-[31px] mb-[21px]">
+      <div className="text-[16px] md:text-[20px] mt-[31px] mb-[21px]">
         <p
           className={`flex justify-center mt-[31px] ${
             showValue ? '' : 'hidden'

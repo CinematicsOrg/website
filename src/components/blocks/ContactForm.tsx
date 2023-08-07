@@ -12,7 +12,7 @@ const ContactForm = () => {
   const formRef = useRef(null);
 
   const scriptUrl =
-    'https://script.google.com/macros/s/AKfycbxG1ubETc1NSlJppzDtE82zi9SKHvgGyLKwzcBiL7zfEHahzJSat2gQG31m4DmfIu7e/exec';
+    'https://script.google.com/macros/s/AKfycbzNQDac8T5HG72Zw6dgYG93C_JPWWirzpK0AoxzxxXPLCzbY3J05WyPIPuEUMuopp7d/exec';
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,6 +23,12 @@ const ContactForm = () => {
         console.log('SUCCESSFULLY SUBMITTED');
       })
       .catch((err) => console.log(err));
+    // console.log({
+    //   Name: name,
+    //   Email: email,
+    //   Number: phone,
+    //   Enquiries: enquiries,
+    // });
 
     // axios
     //   .post(
@@ -43,9 +49,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="text-[white] px-8">
+    <div className="text-[white] px-[16px] md:px-8">
       <form
-        className="flex flex-col w-[517px]"
+        className="flex flex-col w-[100%] md:w-[517px]"
         onSubmit={(e) => handleFormSubmit(e)}
         ref={formRef}
       >
@@ -55,7 +61,7 @@ const ContactForm = () => {
           type="text"
           value={name}
           placeholder="John Doe"
-          classDef="w-full"
+          classDef="w-[100%]"
           changed={(e) => setName(e.target.value)}
         />
 
@@ -65,7 +71,7 @@ const ContactForm = () => {
           name="Email"
           value={email}
           placeholder="Johndoe@email.com"
-          classDef="w-full"
+          classDef="w-[100%]"
           changed={(e) => setEmail(e.target.value)}
         />
 
@@ -75,7 +81,7 @@ const ContactForm = () => {
           name="Number"
           value={phone}
           placeholder="+2348080808080"
-          classDef="w-full"
+          classDef="w-[100%]"
           changed={(e) => setPhone(e.target.value)}
         />
 

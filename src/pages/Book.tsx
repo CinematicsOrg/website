@@ -3,6 +3,8 @@ import Image from '../components/Image';
 import Navbar from '../components/Navbar';
 import BookingForm from '../components/blocks/BookingForm';
 import Footer from '../components/blocks/Footer';
+import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
+import { serviceList } from '../utils/constants';
 
 const ImageList = [
   `bg-[url('images/cinematics_corporate.png')]`,
@@ -38,17 +40,20 @@ const Book = () => {
                 style="w-full md:w-[auto]"
                 clicked={() => handleScrollToSection('#book')}
               >
-                Book a Session
+                Book a Service
               </Button>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-[30px] h-[434px] py-[54px] px-[80px]">
+        <div className="hidden md:grid grid-cols-3 gap-[30px] h-[434px] py-[54px] px-[80px]">
           {content}
+        </div>
+        <div className="md:hidden px-[16px] py-[40px]">
+          <ServiceImageRotation imageList={serviceList} />
         </div>
         <div id="book" className=" bg-lblack text-[white] py-[54px]">
           <p className="text-center font-bold font-roboto text-[36px] leading-[42px] mb-[20px] md:mb-[60px]">
-            Book a Session
+            Book a Service
           </p>
           <BookingForm />
         </div>

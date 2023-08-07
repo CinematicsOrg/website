@@ -132,7 +132,7 @@ const CorporateEvents = () => {
   return (
     <div className="text-[black] bg-[white]">
       <Navbar />
-      <div className="mx-[80px]">
+      <div className="mx-[16px] md:mx-[80px]">
         <ServiceTitle
           title="Corporate Event Videography"
           description="Experience the realization of your dreams with us in no time as we

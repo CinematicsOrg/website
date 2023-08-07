@@ -5,6 +5,7 @@ import Services from '../components/blocks/Services';
 import HomeImages from '../components/blocks/HomeImages';
 import { useNavigate } from 'react-router-dom';
 import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
+import { serviceList } from '../utils/constants';
 
 const ImageList1 = [
   `bg-[url('images/cinematics_1.png')]`,
@@ -42,12 +43,12 @@ const Home = () => {
           <div className="flex justify-center font-poppins text-[14px] md:text-twentyFour md:mb-[15px] leading-9">
             Experience the realization of your dreams with us in no time as we
             specialize in capturing and immortalizing moments, crafting
-            beautifully told stories through stunning visuals. Book a session
+            beautifully told stories through stunning visuals. Book a service
             with our professional team to bring your unique narrative to life.
           </div>
           <div className="flex justify-center mb-[15px] md:mb-0">
             <Button style="w-[100%] md:w-[auto]" clicked={handleMoveToBook}>
-              Book a session
+              Book a Service
             </Button>
           </div>
         </div>
@@ -58,7 +59,7 @@ const Home = () => {
           <Services />
         </div>
         <div className="md:hidden">
-          <ServiceImageRotation />
+          <ServiceImageRotation imageList={serviceList} />
         </div>
         <div className="text-lblack mb-[15px] md:mb-[45px] text-center font-bold text-[24px] md:text-[36px]">
           Celebrate life extraordinary moments through the lens of our passion

@@ -3,9 +3,9 @@ import { ILink, IServiceContent } from './interface';
 export const links: ILink[] = [
   { path: '/', text: 'Home' },
   { path: '/about', text: 'About Us' },
-  { path: '/gallery', text: 'Gallery' },
-  { path: '/book', text: 'Book' },
   { path: '/services', text: 'Services' },
+  { path: '/gallery', text: 'Gallery' },
+  { path: '/book', text: 'Book Now' },
   { path: '/contact', text: 'Contact' },
 ];
 

@@ -5,7 +5,7 @@ export interface ILink {
 
 export interface IServiceContent {
   img: string;
-  content: string;
+  content?: string;
   clickPath?: string;
 }
 

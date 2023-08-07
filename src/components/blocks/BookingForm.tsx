@@ -51,7 +51,7 @@ const BookingForm = () => {
         />
 
         <Label label="EVENT TITLE" />
-        <div className="mb-[16px]">{eventTitleContent}</div>
+        <div className="mb-[16px] md:grid grid-cols-3">{eventTitleContent}</div>
 
         <div className="grid grid-cols-2 gap-[15px] md:gap-[53px]">
           <div className="flex flex-col">

@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="bg-cover bg-[url('images/cinematics_contactbackground.png')]">
       <Navbar logoPath="/images/cinematics_logo.png" />
-      <div className="flex flex-cols-2 h-[926px]">
+      <div className="md:flex flex-cols-2 py-[30px] md:py-[54px]">
         <ContactForm />
       </div>
       <ContactSocials />

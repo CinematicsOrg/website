@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react';
 import Image from '../Image';
-import { serviceList } from '../../utils/constants';
 import { useNavigate } from 'react-router-dom';
+import { IServiceContent } from '../../utils/interface';
 
-const ServiceImageRotation = () => {
+interface ServiceImageRotationProps {
+  imageList: IServiceContent[];
+}
+
+const ServiceImageRotation = ({ imageList }: ServiceImageRotationProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const navigate = useNavigate();
 
@@ -16,12 +20,12 @@ const ServiceImageRotation = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === serviceList.length - 1 ? 0 : prevIndex + 1
+        prevIndex === imageList.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
 
     return () => clearInterval(intervalId);
-  }, [currentIndex]);
+  }, [currentIndex, imageList]);
 
   const handlePaginationClick = (index: number) => {
     setCurrentIndex(index);
@@ -31,15 +35,15 @@ const ServiceImageRotation = () => {
     <div>
       <Image
         paragraphClassDef={`text-center font-bold`}
-        classDef={`${serviceList[currentIndex].img} ${
-          serviceList[currentIndex].clickPath
+        classDef={`${imageList[currentIndex].img} ${
+          imageList[currentIndex].clickPath
             ? 'hover:cursor-pointer hover:shadow-2xl'
             : ''
         }`}
-        content={serviceList[currentIndex].content}
-        key={serviceList[currentIndex].content}
-        clicked={() => handleImageClicked(serviceList[currentIndex].clickPath)}
-        imageList={serviceList}
+        content={imageList[currentIndex].content}
+        key={imageList[currentIndex].content}
+        clicked={() => handleImageClicked(imageList[currentIndex].clickPath)}
+        imageList={imageList}
         currentIndex={currentIndex}
         paginationClicked={handlePaginationClick}
         paginationClassDef="mb-[14px]"
