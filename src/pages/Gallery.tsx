@@ -6,39 +6,24 @@ const youtubeList = [
   {
     src: 'https://www.youtube.com/embed/x9JoMRNaZbg',
     title: `Layole’s Lounge`,
-    description:
-      'Step into the grand opening of Layoles Lounge through our captivating gallery. Witness the excitement, elegance, and anticipation that filled the air as this remarkable venue came to life.',
   },
   {
     src: 'https://www.youtube.com/embed/ZC7tUzBE6Nk',
     title: `Breathe Academy`,
-    description:
-      'Step into the grand opening of Layoles Lounge through our captivating gallery. Witness the excitement, elegance, and anticipation that filled the air as this remarkable venue came to life.',
   },
   {
     src: 'https://www.youtube.com/embed/xoAU85wS1x0',
     title: `Layole’s Lounge`,
-    description:
-      'Step into the grand opening of Layoles Lounge through our captivating gallery. Witness the excitement, elegance, and anticipation that filled the air as this remarkable venue came to life.',
   },
   {
     src: 'https://www.youtube.com/embed/ShjyUIk5WWo',
     title: `Breathe Academy`,
-    description:
-      'Step into the grand opening of Layoles Lounge through our captivating gallery. Witness the excitement, elegance, and anticipation that filled the air as this remarkable venue came to life.',
   },
 ];
 
 const Gallery = () => {
   const content = youtubeList.map((i, index) => {
-    return (
-      <YoutubeVideo
-        key={index}
-        videoSource={i.src}
-        title={i.title}
-        description={i.description}
-      />
-    );
+    return <YoutubeVideo key={index} videoSource={i.src} title={i.title} />;
   });
   return (
     <div className="bg-[white] text-[black]">
