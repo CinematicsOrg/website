@@ -1,3 +1,4 @@
+import GalleryNavbar from '../components/GalleryNavbar';
 import Navbar from '../components/Navbar';
 import YoutubeVideo from '../components/YoutubeVideo';
 import Footer from '../components/blocks/Footer';
@@ -19,6 +20,10 @@ const youtubeList = [
     src: 'https://www.youtube.com/embed/ShjyUIk5WWo',
     title: `Breathe Academy`,
   },
+  {
+    src: 'https://www.youtube.com/embed/ShjyUIk5WWo',
+    title: `Breathe Academy`,
+  },
 ];
 
 const Gallery = () => {
@@ -27,7 +32,9 @@ const Gallery = () => {
   });
   return (
     <div className="bg-[white] text-[black]">
-      <Navbar />
+      <div className="sticky top-0 z-[10000]">
+        <Navbar />
+      </div>
       <div className="px-[79px]">
         <div className="my-[10vw] relative">
           <img
@@ -39,6 +46,7 @@ const Gallery = () => {
             GALLERY
           </div>
         </div>
+        <GalleryNavbar />
         <div className="grid grid-cols-2 gap-8 my-[60px]">{content}</div>
       </div>
 

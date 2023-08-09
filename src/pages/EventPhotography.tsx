@@ -103,7 +103,9 @@ const EventPhotography = () => {
   });
   return (
     <div className="text-[black] bg-[white]">
-      <Navbar />
+      <div className="sticky top-0 z-[10000]">
+        <Navbar />
+      </div>
       <div className="mx-[16px] pt-[24px] pb-[14px] md:mx-[80px]">
         <ServiceTitle title="Event Photography Package" />
         <div>

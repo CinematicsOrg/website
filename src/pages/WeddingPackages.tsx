@@ -224,7 +224,9 @@ const WeddingPackages = () => {
   });
   return (
     <div className="text-[black] bg-[white]">
-      <Navbar />
+      <div className="sticky top-0 z-[10000]">
+        <Navbar />
+      </div>
       <div className="mx-[16px] md:mx-[80px]">
         <ServiceTitle
           title="Wedding Video Packages"

@@ -15,12 +15,12 @@ const YoutubeVideo = ({
   autoPlay = 0,
   mute = 0,
   loop = 0,
-  controls = 0,
+  controls = 1,
 }: YoutubeVideoProps) => {
   return (
     <div>
       <iframe
-        className={`w-full rounded-3xl  ${classDef}`}
+        className={`w-full h-[360px] rounded-3xl  ${classDef}`}
         src={`${videoSource}?autoplay=${autoPlay}&mute=${mute}&loop=${loop}&controls=${controls}`}
       ></iframe>
       <div className="mt-[64px]">

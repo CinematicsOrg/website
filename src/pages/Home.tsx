@@ -6,6 +6,7 @@ import HomeImages from '../components/blocks/HomeImages';
 import { useNavigate } from 'react-router-dom';
 import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
 import { serviceList } from '../utils/constants';
+import ContactSocials from '../components/blocks/ContactSocials';
 
 const ImageList1 = [
   `bg-[url('images/cinematics_1.png')]`,
@@ -29,12 +30,15 @@ const Home = () => {
   };
   return (
     <div>
-      <div className="md:hidden">
+      <div className="md:hidden sticky top-0 z-[10000]">
         <Navbar logoPath="/images/cinematics_logo.png" />
       </div>
       <div className="flex flex-col md:content-between md:h-def bg-cover bg-center bg-no-repeat  bg-[url('/images/Home_background.jpeg')]">
-        <div className="hidden md:block">
-          <Navbar logoPath="/images/cinematics_logo.png" />
+        <div className="hidden md:block sticky top-0 z-[10000]">
+          <Navbar
+            logoPath="/images/cinematics_logo.png"
+            bgColour="md:bg-[inherit]"
+          />
         </div>
         <div className="flex-col mx-[16px] md:pb-4 md:px-20 justify-center text-white mt-auto">
           <div className="flex justify-center text-[32px] md:mb-[15px] font-dancing font-bold md:text-def">
@@ -68,6 +72,7 @@ const Home = () => {
         <HomeImages ImageList={ImageList1} />
         <HomeImages ImageList={ImageList2} />
       </div>
+      <ContactSocials />
       <Footer />
     </div>
   );

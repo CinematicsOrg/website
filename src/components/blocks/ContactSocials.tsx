@@ -4,7 +4,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 const ContactSocials = () => {
   return (
-    <div className="bg-lblack py-[30px] md:py-[54px] px-[16px] md:px-[80px]">
+    <div className="bg-lblack py-[30px] md:py-[54px] px-[16px] md:px-[79px]">
       <div className="flex flex-col md:flex-row md:items-center justify-between md:py-[16px]">
         <div className="mb-[40px] md:mb-0">
           <p className="text-[24px] mb-[16px] md:text-[32px] font-medium font-inter">

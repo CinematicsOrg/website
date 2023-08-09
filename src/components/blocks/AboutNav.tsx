@@ -49,7 +49,7 @@ const AboutNav = () => {
 
   const navContent = navList.map((navItem) => (
     <div
-      className={`relative h-[24px] md:h-[42px] items-center justify-center mx-[20px] text-[18px] leading-[24px] md:text-[36px] font-bold md:mx-[44px] cursor-pointer ${
+      className={`relative h-[24px] md:h-[42px] items-center justify-center mx-[10px] text-[18px] whitespace-nowrap leading-[24px] md:text-[36px] font-bold md:mx-[44px] cursor-pointer ${
         activeNavItem === navItem.id ? 'text-dred' : ''
       }`}
       onClick={() => handleClicked(navItem.id)}
@@ -74,7 +74,7 @@ const AboutNav = () => {
   });
 
   return (
-    <div className="flex flex-col justify-between pt-[30px] pb-0 md:py-[54px] px-[16px] md:px-[80px] ">
+    <div className="flex flex-col justify-around pt-[30px] pb-0 md:py-[54px] px-[16px] md:px-[80px] ">
       <div className="flex justify-center relative">
         <div className="flex">{navContent}</div>
         <div className="absolute bg-[black] z-10 h-[1px] bottom-[-30px] left-0 right-0 w-[100%]" />

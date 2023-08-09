@@ -24,7 +24,9 @@ const Book = () => {
   return (
     <div>
       <div className="bg-[white] text-[black] font-inter">
-        <Navbar />
+        <div className="sticky top-0 z-[10000]">
+          <Navbar />
+        </div>
         <div className="px-[16px] md:px-[80px]">
           <div className="flex flex-col text-center">
             <div className="text-[24px] md:text-[64px] font-medium mb-[10px] md:mb-[24px]">

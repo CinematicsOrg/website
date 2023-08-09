@@ -6,9 +6,10 @@ import { useState } from 'react';
 
 export type NavbarProps = {
   logoPath?: string;
+  bgColour?: string;
 };
 
-const Navbar = ({ logoPath }: NavbarProps) => {
+const Navbar = ({ logoPath, bgColour }: NavbarProps) => {
   const [showNavDrawer, setShowNavDrawer] = useState<boolean>(false);
 
   const location = useLocation();
@@ -38,8 +39,12 @@ const Navbar = ({ logoPath }: NavbarProps) => {
   };
 
   return (
-    <div>
-      <nav className="bg-[black] h-20 px-[20px] py-[12px] flex items-center justify-between md:bg-[inherit] md:py-4 md:px-[79px]">
+    <div className="">
+      <nav
+        className={`bg-[black] h-20 px-[20px] py-[12px] flex items-center justify-between ${
+          bgColour ? bgColour : 'md:bg-[white]'
+        } md:py-4 md:px-[79px]`}
+      >
         <div className="flex items-center hover:border-transparent hover:shadow-sm">
           <Link to="/">
             <div className="hidden md:block">

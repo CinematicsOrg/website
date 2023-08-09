@@ -34,7 +34,9 @@ const About = () => {
   return (
     <div>
       <div className="bg-[white] text-[black] font-inter">
-        <Navbar />
+        <div className="sticky top-0 z-[10000]">
+          <Navbar />
+        </div>
         <div className="md:grid grid-cols-2 md:mx-[80px] md:mt-[54px] ">
           <div className="md:h-auto px-[37px] py-[38px] bg-[black]">
             <Image

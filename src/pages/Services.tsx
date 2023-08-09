@@ -5,7 +5,9 @@ import Services from '../components/blocks/Services';
 const Service = () => {
   return (
     <div className="bg-[white] text-[black] font-inter">
-      <Navbar />
+      <div className="sticky top-0 z-[10000]">
+        <Navbar />
+      </div>
       <div className="pt-[20px] px-4 md:px-[79px]">
         <div className="font-medium text-[24px] md:font-bold md:text-[36px]">
           <p className="text-center">Services</p>
