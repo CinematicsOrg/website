@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import Button from '../Button';
 import FormInput from '../FormInput';
-import axios from 'axios';
 import Label from '../Label';
 
 const ContactForm = () => {
@@ -11,18 +10,18 @@ const ContactForm = () => {
   const [enquiries, setEnquiries] = useState<string>('');
   const formRef = useRef(null);
 
-  const scriptUrl =
-    'https://script.google.com/macros/s/AKfycbzNQDac8T5HG72Zw6dgYG93C_JPWWirzpK0AoxzxxXPLCzbY3J05WyPIPuEUMuopp7d/exec';
+  // const scriptUrl =
+  //   'https://script.google.com/macros/s/AKfycbzNQDac8T5HG72Zw6dgYG93C_JPWWirzpK0AoxzxxXPLCzbY3J05WyPIPuEUMuopp7d/exec';
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formRef.current);
 
-    fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current!) })
-      .then((res) => {
-        console.log('SUCCESSFULLY SUBMITTED');
-      })
-      .catch((err) => console.log(err));
+    // fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current!) })
+    //   .then((res) => {
+    //     console.log('SUCCESSFULLY SUBMITTED');
+    //   })
+    //   .catch((err) => console.log(err));
     // console.log({
     //   Name: name,
     //   Email: email,
