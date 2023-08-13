@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import BookingForm from '../components/blocks/BookingForm';
 import Footer from '../components/blocks/Footer';
 import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
-import { bookScrollingImages, serviceList } from '../utils/constants';
+import { bookScrollingImages } from '../utils/constants';
 
 const ImageList = [
   `bg-[url('images/cinematics_corporate.png')]`,
