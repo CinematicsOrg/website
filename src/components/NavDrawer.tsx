@@ -12,7 +12,12 @@ const NavDrawer = () => {
       (location.pathname === '/wedding-package' && link.path === '/services') ||
       (location.pathname === '/corporate-events' &&
         link.path === '/services') ||
-      (location.pathname === '/video-booth' && link.path === '/services')
+      (location.pathname === '/video-booth' && link.path === '/services') ||
+      (location.pathname === '/virtual-reality' && link.path === '/services') ||
+      (location.pathname === '/corporate-photography' &&
+        link.path === '/services') ||
+      (location.pathname === '/photo-booth' && link.path === '/services') ||
+      (location.pathname === '/event-photography' && link.path === '/services')
     ) {
       return 'text-dred font-bold';
     } else {

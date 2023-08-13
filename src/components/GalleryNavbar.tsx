@@ -1,41 +1,76 @@
-// import React from 'react';
-
-// const galleryLinks = [
-//   'ALL',
-//   'CORPORATE',
-//   'WEDDING',
-//   'VIRTUAL REALITY',
-//   'PHOTO BOOTH',
-//   'VIDEO BOOTH',
-// ];
+import { Link, useLocation } from 'react-router-dom';
+import { galleryLinks } from '../utils/constants';
 
 const GalleryNavbar = () => {
+  const location = useLocation();
+
+  const galleryContent = galleryLinks.map((i, index) => {
+    return (
+      <div
+        key={index}
+        className={`border-b mx-[14px] ${
+          location.pathname === i.path ? 'text-[black]' : ''
+        }`}
+      >
+        <Link to={i.path}>{i.text}</Link>
+      </div>
+    );
+  });
   return (
-    <div>
-      {/* <div>
-        {links.map((link) => (
-          <div
-            key={link.path}
-            className={`ml-6 hover:border-transparent hover:shadow-sm ${locationDetector(
-              link
-            )}`}
+    <div className="bg-[white] text-[#9c9c9c]">
+      <div className="hidden md:flex justify-center text-[16px] whitespace-nowrap">
+        {galleryContent}
+      </div>
+
+      {/* This would be shown on smaller screens only */}
+      <div className="flex flex-col justify-center text-[13px] leading-[17px] md:hidden">
+        <div className="flex justify-center my-[15px] leading-[17px]">
+          <span
+            className={`border-b ${
+              location.pathname === '/' ? 'text-[black]' : ''
+            } inline-block`}
           >
-            <Link to={link.path}>
-              <span>{link.text}</span>
-            </Link>
-          </div>
-        ))}
-      </div> */}
-      <div className="flex flex-col md:flex-row justify-center text-[12px] leading-[17px] text-[#9c9c9c]">
-        <div className="flex justify-center">ALL</div>
-        <div className="flex justify-center">
-          <div className="mr-[15px]">WEDDING</div>
-          <div className="ml-[15px]">CORPORATE</div>
+            <Link to="/">ALL</Link>
+          </span>
         </div>
-        <div className="flex justify-center">
-          <div className="whitespace-nowrap mr-[5px]">VIRTUAL REALITY</div>
-          <div className="whitespace-nowrap mr-[5px] ml-[5px]">PHOTO BOOTH</div>
-          <div className="whitespace-nowrap  ml-[5px]">VIDEO BOOTH</div>
+        <div className="flex mb-[15px] items-center justify-around">
+          <div
+            className={` border-b ${
+              location.pathname === '/gallery-wedding' ? 'text-[black]' : ''
+            }`}
+          >
+            <Link to="/gallery-wedding">WEDDING</Link>
+          </div>
+          <div
+            className={` border-b ${
+              location.pathname === '/gallery-corporate' ? 'text-[black]' : ''
+            }`}
+          >
+            <Link to="/gallery-corporate">CORPORATE</Link>
+          </div>
+        </div>
+        <div className="flex items-center justify-around">
+          <div
+            className={`whitespace-nowrap border-b ${
+              location.pathname === '/gallery-virtual' ? 'text-[black]' : ''
+            }`}
+          >
+            <Link to="/gallery-virtual">VIRTUAL REALITY</Link>
+          </div>
+          <div
+            className={`whitespace-nowrap border-b ${
+              location.pathname === '/gallery-photo' ? 'text-[black]' : ''
+            }`}
+          >
+            <Link to="/gallery-photo">PHOTO BOOTH</Link>
+          </div>
+          <div
+            className={`whitespace-nowrap ml-[5px] border-b ${
+              location.pathname === '/gallery-video' ? 'text-[black]' : ''
+            }`}
+          >
+            <Link to="/gallery-video">VIDEO BOOTH</Link>
+          </div>
         </div>
       </div>
     </div>

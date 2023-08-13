@@ -2,31 +2,13 @@ import GalleryNavbar from '../components/GalleryNavbar';
 import Navbar from '../components/Navbar';
 import YoutubeVideo from '../components/YoutubeVideo';
 import Footer from '../components/blocks/Footer';
+import { IYoutubeLinks } from '../utils/interface';
 
-const youtubeList = [
-  {
-    src: 'https://www.youtube.com/embed/x9JoMRNaZbg',
-    title: `Layole’s Lounge`,
-  },
-  {
-    src: 'https://www.youtube.com/embed/ZC7tUzBE6Nk',
-    title: `Breathe Academy`,
-  },
-  {
-    src: 'https://www.youtube.com/embed/xoAU85wS1x0',
-    title: `Layole’s Lounge`,
-  },
-  {
-    src: 'https://www.youtube.com/embed/ShjyUIk5WWo',
-    title: `Breathe Academy`,
-  },
-  {
-    src: 'https://www.youtube.com/embed/ShjyUIk5WWo',
-    title: `Breathe Academy`,
-  },
-];
+interface GalleryProps {
+  youtubeList: IYoutubeLinks[];
+}
 
-const Gallery = () => {
+const Gallery = ({ youtubeList }: GalleryProps) => {
   const content = youtubeList.map((i, index) => {
     return <YoutubeVideo key={index} videoSource={i.src} title={i.title} />;
   });
@@ -35,19 +17,21 @@ const Gallery = () => {
       <div className="sticky top-0 z-[10000]">
         <Navbar />
       </div>
-      <div className="px-[79px]">
+      <div className="px-[16px] md:px-[79px]">
         <div className="my-[10vw] relative">
           <img
             src="/images/cinematics_gallery_top.png"
             alt="Gallery"
             className="z-20"
           />
-          <div className="absolute z-40 bottom-[-29px] left-[35%] text-[16px] leading-[24px] shadow-sm bg-[white] text-center w-[30%] text-[#667085] border-[1px] border-none rounded px-[13px] py-[17px] font-inter">
+          <div className="absolute z-40 bottom-[-14px] md:bottom-[-29px] left-[35%] text-[16px] leading-[24px] shadow-sm bg-[white] text-center w-[30%] text-[#667085] border-[1px] border-none rounded px-2 md:px-[13px] py-[3px] md:py-[17px] font-inter">
             GALLERY
           </div>
         </div>
         <GalleryNavbar />
-        <div className="grid grid-cols-2 gap-8 my-[60px]">{content}</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 my-[10px] md:my-[60px]">
+          {content}
+        </div>
       </div>
 
       <div className="text-[white]">

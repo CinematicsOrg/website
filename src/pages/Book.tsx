@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import BookingForm from '../components/blocks/BookingForm';
 import Footer from '../components/blocks/Footer';
 import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
-import { serviceList } from '../utils/constants';
+import { bookScrollingImages, serviceList } from '../utils/constants';
 
 const ImageList = [
   `bg-[url('images/cinematics_corporate.png')]`,
@@ -51,7 +51,7 @@ const Book = () => {
           {content}
         </div>
         <div className="md:hidden px-[16px] py-[40px]">
-          <ServiceImageRotation imageList={serviceList} />
+          <ServiceImageRotation imageList={bookScrollingImages} />
         </div>
         <div id="book" className=" bg-lblack text-[white] py-[54px]">
           <p className="text-center font-bold font-roboto text-[36px] leading-[42px] mb-[20px] md:mb-[60px]">

@@ -20,3 +20,8 @@ export interface IGeneralServicePackage {
   hasDeliverableTitle: boolean;
   deliverablesImgPath: string;
 }
+
+export interface IYoutubeLinks {
+  src: string;
+  title: string;
+}

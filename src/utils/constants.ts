@@ -1,4 +1,4 @@
-import { ILink, IServiceContent } from './interface';
+import { ILink, IServiceContent, IYoutubeLinks } from './interface';
 
 export const links: ILink[] = [
   { path: '/', text: 'Home' },
@@ -7,6 +7,15 @@ export const links: ILink[] = [
   { path: '/gallery', text: 'Gallery' },
   { path: '/book', text: 'Book Now' },
   { path: '/contact', text: 'Contact' },
+];
+
+export const galleryLinks: ILink[] = [
+  { text: 'ALL', path: '/' },
+  { text: 'CORPORATE', path: '/gallery-corporate' },
+  { text: 'WEDDING', path: '/gallery-wedding' },
+  { text: 'VIRTUAL REALITY', path: '/gallery-virtual' },
+  { text: 'PHOTO BOOTH', path: '/gallery-photo' },
+  { text: 'VIDEO BOOTH', path: '/gallery-video' },
 ];
 
 export const serviceList: IServiceContent[] = [
@@ -47,6 +56,12 @@ export const serviceList: IServiceContent[] = [
   },
 ];
 
+export const bookScrollingImages = [
+  { img: `bg-[url('images/cinematics_corporate.png')]` },
+  { img: `bg-[url('images/cinematics_10.png')]` },
+  { img: `bg-[url('images/cinematics_9.png')]` },
+];
+
 export const addOnsList = [
   'Aditional photographer',
   'Extra album ( Size 12x20 )',
@@ -61,4 +76,27 @@ export const eventTitleList = [
   'WEDDING VIDEOGAPHY',
   'CORPORATE PHOTOGRAPHY',
   'CORPORATE EVENT VIDEOGRAPHY',
+];
+
+export const youtubeList: IYoutubeLinks[] = [
+  {
+    src: 'https://www.youtube.com/embed/x9JoMRNaZbg',
+    title: `Layole’s Lounge`,
+  },
+  {
+    src: 'https://www.youtube.com/embed/ZC7tUzBE6Nk',
+    title: `Breathe Academy`,
+  },
+  {
+    src: 'https://www.youtube.com/embed/xoAU85wS1x0',
+    title: `Layole’s Lounge`,
+  },
+  {
+    src: 'https://www.youtube.com/embed/ShjyUIk5WWo',
+    title: `Breathe Academy`,
+  },
+  {
+    src: 'https://www.youtube.com/embed/ShjyUIk5WWo',
+    title: `Breathe Academy`,
+  },
 ];

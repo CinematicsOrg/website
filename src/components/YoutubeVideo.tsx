@@ -23,8 +23,8 @@ const YoutubeVideo = ({
         className={`w-full h-[360px] rounded-3xl  ${classDef}`}
         src={`${videoSource}?autoplay=${autoPlay}&mute=${mute}&loop=${loop}&controls=${controls}`}
       ></iframe>
-      <div className="mt-[64px]">
-        <div className="md:text-[36px] md:leading-[44px] font-medium mb-[20px]">
+      <div className="mt-[25px] md:mt-[64px]">
+        <div className="text-[14px] leading-[17px] md:text-[36px] md:leading-[44px] font-medium mb-[20px] md:mb-0">
           {title}
         </div>
       </div>

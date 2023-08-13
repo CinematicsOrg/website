@@ -12,31 +12,41 @@ const ContactSocials = () => {
           </p>
           <div className=" flex flex-col font-poppins text-[14px] mb-[24px] md:text-[20px]">
             <div className="flex mb-[16px]">
-              <img
-                src="/svg/instagram-brand.svg"
-                alt="instagram"
-                className="mr-[10px]"
-              />
-              <img
-                src="/svg/facebook-brand.svg"
-                alt="facebook"
-                className="mr-[10px]"
-              />
-              <img
-                src="/svg/twitter-brand.svg"
-                alt="twitter"
-                className="mr-[10px]"
-              />
-              <img
-                src="/svg/threads-brand.svg"
-                alt="threads"
-                className="mr-[10px]"
-              />
-              <img
-                src="/svg/youtube-brand.svg"
-                alt="youtube"
-                className="mr-[10px]"
-              />
+              <a href="https://www.instagram.com/cinematicsng/">
+                <img
+                  src="/svg/instagram-brand.svg"
+                  alt="instagram"
+                  className="mr-[10px]"
+                />
+              </a>
+              <a href="https://web.facebook.com/cinematicsng/">
+                <img
+                  src="/svg/facebook-brand.svg"
+                  alt="facebook"
+                  className="mr-[10px]"
+                />
+              </a>
+              <a href="https://twitter.com/cinematicsng/">
+                <img
+                  src="/svg/twitter-brand.svg"
+                  alt="twitter"
+                  className="mr-[10px]"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="/svg/threads-brand.svg"
+                  alt="threads"
+                  className="mr-[10px]"
+                />
+              </a>
+              <a href="https://www.youtube.com/@CinematicsNG">
+                <img
+                  src="/svg/youtube-brand.svg"
+                  alt="youtube"
+                  className="mr-[10px]"
+                />
+              </a>
             </div>
             <p className="font-poppins text-[14px] md:text-[20px]">
               cinematicsng
