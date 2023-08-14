@@ -1,7 +1,7 @@
 import Image from '../Image';
 
 const ImageList = [
-  `bg-[url('images/cinematics_cocacola.png')]`,
+  `bg-[url('/images/cinematics_cocacola.png')]`,
   `bg-[url('/images/cinematics_visa.png')]`,
   `bg-[url('/images/cinematics_pepsi.png')]`,
   `bg-[url('/images/cinematics_hp.png')]`,
@@ -20,7 +20,7 @@ const ImageList = [
 ];
 
 const SmallScreenImageList = [
-  `bg-[url('images/cinematics_cocacola_small.png')]`,
+  `bg-[url('/images/cinematics_cocacola_small.png')]`,
   `bg-[url('/images/cinematics_visa_small.png')]`,
   `bg-[url('/images/cinematics_pepsi_small.png')]`,
   `bg-[url('/images/cinematics_hp_small.png')]`,

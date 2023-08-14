@@ -10,14 +10,14 @@ import ContactSocials from '../components/blocks/ContactSocials';
 import GalleryNavbar from '../components/GalleryNavbar';
 
 const ImageList1 = [
-  `bg-[url('images/cinematics_1.png')]`,
+  `bg-[url('/images/cinematics_1.png')]`,
   `bg-[url('/images/cinematics_2.png')]`,
   `col-start-1 col-span-2 bg-[url('/images/cinematics_3.png')]`,
   `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_4.png')]`,
 ];
 
 const ImageList2 = [
-  `bg-[url('images/cinematics_5.png')]`,
+  `bg-[url('/images/cinematics_5.png')]`,
   `bg-[url('/images/cinematics_6.png')]`,
   `col-start-1 col-span-2 bg-[url('/images/cinematics_7.png')]`,
   `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_8.png')]`,

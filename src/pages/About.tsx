@@ -40,7 +40,7 @@ const About = () => {
         <div className="md:grid grid-cols-2 md:mx-[80px] md:mt-[54px] ">
           <div className="md:h-auto px-[37px] py-[38px] bg-[black]">
             <Image
-              classDef={`object-cover h-[400px] bg-[url('images/cinematics_11.png')]`}
+              classDef={`object-cover h-[400px] bg-[url('/images/cinematics_11.png')]`}
             />
           </div>
           <div className="mx-[16px] md:mx-0">

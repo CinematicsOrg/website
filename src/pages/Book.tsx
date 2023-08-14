@@ -7,9 +7,9 @@ import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
 import { bookScrollingImages } from '../utils/constants';
 
 const ImageList = [
-  `bg-[url('images/cinematics_corporate.png')]`,
-  `bg-[url('images/cinematics_10.png')]`,
-  `bg-[url('images/cinematics_9.png')]`,
+  `bg-[url('/images/cinematics_corporate.png')]`,
+  `bg-[url('/images/cinematics_10.png')]`,
+  `bg-[url('/images/cinematics_9.png')]`,
 ];
 
 const Book = () => {

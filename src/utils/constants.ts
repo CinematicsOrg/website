@@ -20,7 +20,7 @@ export const galleryLinks: ILink[] = [
 
 export const serviceList: IServiceContent[] = [
   {
-    img: `bg-[url('images/cinematics_corporate.png')]`,
+    img: `bg-[url('/images/cinematics_corporate.png')]`,
     content: 'Corporate Event Videography',
     clickPath: '/corporate-events',
   },
@@ -57,9 +57,9 @@ export const serviceList: IServiceContent[] = [
 ];
 
 export const bookScrollingImages = [
-  { img: `bg-[url('images/cinematics_corporate.png')]` },
-  { img: `bg-[url('images/cinematics_10.png')]` },
-  { img: `bg-[url('images/cinematics_9.png')]` },
+  { img: `bg-[url('/images/cinematics_corporate.png')]` },
+  { img: `bg-[url('/images/cinematics_10.png')]` },
+  { img: `bg-[url('/images/cinematics_9.png')]` },
 ];
 
 export const addOnsList = [
