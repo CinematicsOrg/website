@@ -82,7 +82,7 @@ const BookingForm = () => {
       <Formik
         initialValues={initialState}
         validate={validate}
-        onSubmit={async (values, { setSubmitting, resetForm }) => {
+        onSubmit={async (_, { setSubmitting, resetForm }) => {
           setSubmitting(true);
           setFormSubmitSuccess(false);
           setFormSubmitError(false);
@@ -94,6 +94,7 @@ const BookingForm = () => {
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             body: new FormData(formRef.current!),
           })
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             .then((_) => {
               console.log('SUCCESSFULLY SUBMITTED');
               setLoading(false);

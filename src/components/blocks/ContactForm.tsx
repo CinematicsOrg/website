@@ -9,6 +9,8 @@ import TextAreaInput from '../TextAreaInput';
 const ContactForm = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [formSubmitSuccess, setFormSubmitSuccess] = useState<boolean>(false);
+  const [formSubmitError, setFormSubmitError] = useState<boolean>(false);
+  const [error, setError] = useState<string>('');
   const formRef = useRef(null);
 
   const initialState = {
@@ -76,6 +78,8 @@ const ContactForm = () => {
         onSubmit={async (_, { setSubmitting, resetForm }) => {
           setSubmitting(true);
           setFormSubmitSuccess(false);
+          setFormSubmitError(false);
+          setError('');
           setLoading(true);
 
           fetch(scriptUrl, {
@@ -83,6 +87,7 @@ const ContactForm = () => {
             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             body: new FormData(formRef.current!),
           })
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             .then((_) => {
               console.log('SUCCESSFULLY SUBMITTED');
               setLoading(false);
@@ -93,6 +98,8 @@ const ContactForm = () => {
             .catch((err) => {
               setLoading(false);
               setSubmitting(false);
+              setFormSubmitError(true);
+              setError(err.message);
             });
         }}
       >
@@ -183,6 +190,10 @@ const ContactForm = () => {
       ) : formSubmitSuccess ? (
         <div className="md:text-[36px] text-center pt-[60px]">
           The form was sent successfully
+        </div>
+      ) : formSubmitError ? (
+        <div className="md:text-[36px] text-center pt-[60px]">
+          {error === 'Failed to fetch' ? 'Network Error' : error}
         </div>
       ) : null}
     </div>
