@@ -33,7 +33,7 @@ const ContactSocials = () => {
                   className="mr-[10px]"
                 />
               </a>
-              <a href="">
+              <a href="https://www.threads.net/@cinematicsng">
                 <img
                   src="/svg/threads-brand.svg"
                   alt="threads"

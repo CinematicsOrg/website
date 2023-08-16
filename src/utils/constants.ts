@@ -69,14 +69,27 @@ export const addOnsList = [
 ];
 
 export const eventTitleList = [
-  'VIRTUAL REALITY',
-  'PHOTO BOOTH',
-  'VIDEO BOOTH',
-  'EVENT PHOTOGRAPHY',
-  'WEDDING VIDEOGAPHY',
-  'CORPORATE PHOTOGRAPHY',
-  'CORPORATE EVENT VIDEOGRAPHY',
+  { formName: 'virtualReality', title: 'VIRTUAL REALITY' },
+  { formName: 'photoBooth', title: 'PHOTO BOOTH' },
+  { formName: 'videoBooth', title: 'VIDEO BOOTH' },
+  { formName: 'eventPhotography', title: 'EVENT PHOTOGRAPHY' },
+  { formName: 'weddingVideography', title: 'WEDDING VIDEOGAPHY' },
+  { formName: 'corporatePhotography', title: 'CORPORATE PHOTOGRAPHY' },
+  {
+    formName: 'corporateEventPhotography',
+    title: 'CORPORATE EVENT VIDEOGRAPHY',
+  },
 ];
+
+export const bookingFormChecklistInitialState = {
+  virtualReality: false,
+  photoBooth: false,
+  videoBooth: false,
+  eventPhotography: false,
+  weddingVideography: false,
+  corporatePhotography: false,
+  corporateEventPhotography: false,
+};
 
 export const youtubeList: IYoutubeLinks[] = [
   {
