@@ -20,7 +20,7 @@ import VideoBoothGallery from '../pages/VideoBoothGallery';
 
 const ManiRoutes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'/'}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
