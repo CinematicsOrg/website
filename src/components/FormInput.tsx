@@ -1,4 +1,4 @@
-import { ChangeEvent, HTMLInputTypeAttribute } from 'react';
+import { ChangeEvent, FocusEventHandler, HTMLInputTypeAttribute } from 'react';
 
 interface FormInputProps {
   type: HTMLInputTypeAttribute;
@@ -8,6 +8,8 @@ interface FormInputProps {
   placeholder?: string;
   classDef?: string;
   id?: string;
+  onBlur?: FocusEventHandler<HTMLInputElement> | undefined;
+  error?: string | boolean;
 }
 
 const FormInput = ({
@@ -18,18 +20,22 @@ const FormInput = ({
   value,
   changed,
   id,
+  onBlur,
+  error,
 }: FormInputProps) => {
   return (
-    <div>
+    <div className="mb-[16px] md:mb-[45px]">
       <input
         id={id}
+        onBlur={onBlur}
         type={type}
         name={name}
         onChange={changed}
         value={value}
         placeholder={placeholder ? placeholder : undefined}
-        className={`h-[45px] mb-[16px] md:mb-[45px] text-[black] text-[20px] p-2 ${classDef}`}
+        className={`h-[45px]  text-[black] text-[20px] p-2 ${classDef}`}
       />
+      <span className="text-[red] text-xs lg:text-sm">{error}</span>
     </div>
   );
 };
