@@ -12,35 +12,55 @@ const ContactSocials = () => {
           </p>
           <div className=" flex flex-col font-poppins text-[14px] mb-[24px] md:text-[20px]">
             <div className="flex mb-[16px]">
-              <a href="https://www.instagram.com/cinematicsng/">
+              <a
+                href="https://www.instagram.com/cinematicsng/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="/svg/instagram-brand.svg"
                   alt="instagram"
                   className="mr-[10px]"
                 />
               </a>
-              <a href="https://web.facebook.com/cinematicsng/">
+              <a
+                href="https://web.facebook.com/cinematicsng/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="/svg/facebook-brand.svg"
                   alt="facebook"
                   className="mr-[10px]"
                 />
               </a>
-              <a href="https://twitter.com/cinematicsng/">
+              <a
+                href="https://twitter.com/cinematicsng/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="/svg/twitter-brand.svg"
                   alt="twitter"
                   className="mr-[10px]"
                 />
               </a>
-              <a href="https://www.threads.net/@cinematicsng">
+              <a
+                href="https://www.threads.net/@cinematicsng"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="/svg/threads-brand.svg"
                   alt="threads"
                   className="mr-[10px]"
                 />
               </a>
-              <a href="https://www.youtube.com/@CinematicsNG">
+              <a
+                href="https://www.youtube.com/@CinematicsNG"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src="/svg/youtube-brand.svg"
                   alt="youtube"
@@ -57,27 +77,35 @@ const ContactSocials = () => {
           <p className="text-[24px] mb-[16px] md:text-[32px] font-medium font-inter">
             Send us a mail
           </p>
-          <p className="font-poppins text-[14px] mb-[24px] md:text-[20px]">
-            <EmailOutlinedIcon className="mr-[8px]" />
-            cinematicsng@gmail.com
-          </p>
-          <p className="font-poppins text-[14px] md:text-[20px]">
-            <EmailOutlinedIcon className="mr-[8px]" />
-            info@cinematicsng.com
-          </p>
+          <a href="mailto:cinematicsng@gmail.com">
+            <p className="font-poppins text-[14px] mb-[24px] md:text-[20px]">
+              <EmailOutlinedIcon className="mr-[8px]" />
+              cinematicsng@gmail.com
+            </p>
+          </a>
+          <a href="mailto:info@cinematicsng.com">
+            <p className="font-poppins text-[14px] md:text-[20px]">
+              <EmailOutlinedIcon className="mr-[8px]" />
+              info@cinematicsng.com
+            </p>
+          </a>
         </div>
         <div className="mb-[40px] md:mb-0">
           <p className="text-[24px] mb-[16px] md:text-[32px] font-medium font-inter">
             Call Us
           </p>
-          <p className="font-poppins text-[14px] mb-[24px] md:text-[20px]">
-            <AddIcCallOutlinedIcon className="mr-[8px]" />
-            +2349030003360
-          </p>
-          <p className="font-poppins text-[14px] md:text-[20px]">
-            <AddIcCallOutlinedIcon className="mr-[8px]" />
-            +2348032008916
-          </p>
+          <a href="tel:+2349030003360">
+            <p className="font-poppins text-[14px] mb-[24px] md:text-[20px]">
+              <AddIcCallOutlinedIcon className="mr-[8px]" />
+              +2349030003360
+            </p>
+          </a>
+          <a href="tel:+2348032008916">
+            <p className="font-poppins text-[14px] md:text-[20px]">
+              <AddIcCallOutlinedIcon className="mr-[8px]" />
+              +2348032008916
+            </p>
+          </a>
         </div>
       </div>
       <div>
