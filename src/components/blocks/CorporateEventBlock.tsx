@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from '../Button';
 import CorporateServiceList from '../CorporateServiceList';
 
@@ -17,11 +17,6 @@ const CorporateEventBlock = ({
   deliverablesImgPath,
   deliverablesList,
 }: CorporateEventBlockProps) => {
-  const navigate = useNavigate();
-
-  const handleMoveToBook = () => {
-    navigate('/book');
-  };
   return (
     <div>
       <div className="mt-[24px] mb-[8px] md:my-[45px] font-dancing font-bold text-[24px] leading-[30px] md:text-[64px] md:leading-[44px]">
@@ -43,9 +38,9 @@ const CorporateEventBlock = ({
         />
       </div>
       <div className="flex justify-center mt-[32px]">
-        <Button style="w-[100%]" clicked={handleMoveToBook}>
-          Book Now
-        </Button>
+        <Link to="/book/#book">
+          <Button style="w-[100%]">Book Now</Button>
+        </Link>
       </div>
     </div>
   );

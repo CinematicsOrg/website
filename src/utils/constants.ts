@@ -4,18 +4,46 @@ export const links: ILink[] = [
   { path: '/', text: 'Home' },
   { path: '/about', text: 'About Us' },
   { path: '/services', text: 'Services' },
-  { path: '/gallery', text: 'Gallery' },
+  { path: '/#galleryNavbar', text: 'Gallery' },
   { path: '/book', text: 'Book Now' },
   { path: '/contact', text: 'Contact' },
 ];
 
-export const galleryLinks: ILink[] = [
-  { text: 'ALL', path: '/' },
-  { text: 'CORPORATE', path: '/gallery-corporate' },
-  { text: 'WEDDING', path: '/gallery-wedding' },
-  { text: 'VIRTUAL REALITY', path: '/gallery-virtual' },
-  { text: 'PHOTO BOOTH', path: '/gallery-photo' },
-  { text: 'VIDEO BOOTH', path: '/gallery-video' },
+export const galleryLinks: (ILink & { img?: string; content?: string })[] = [
+  {
+    text: 'ALL',
+    path: '/',
+  },
+  {
+    text: 'CORPORATE',
+    path: '/gallery-corporate',
+    content: 'Corporate',
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_corporate.png')]`,
+  },
+  {
+    text: 'WEDDING',
+    path: '/gallery-wedding',
+    content: 'Wedding',
+    img: `col-span-1 row-span-2 bg-[url('/images/cinematics_wedding.png')]`,
+  },
+  {
+    text: 'VIRTUAL REALITY',
+    path: '/gallery-virtual',
+    content: 'Virtual Reality',
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_360.png')]`,
+  },
+  {
+    text: '360 VIDEO BOOTH',
+    path: '/gallery-360-video',
+    content: '360 Video booth',
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_reality.png')]`,
+  },
+  {
+    text: 'VIDEO BOOTH',
+    path: '/gallery-video',
+    content: 'Video Booth',
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_photobooth.png')]`,
+  },
 ];
 
 export const serviceList: IServiceContent[] = [
@@ -25,7 +53,7 @@ export const serviceList: IServiceContent[] = [
     clickPath: '/corporate-events',
   },
   {
-    img: `col-span-2 bg-[url('/images/cinematics_wedding.png')]`,
+    img: `bg-[url('/images/cinematics_wedding.png')]`,
     content: 'Wedding Videos',
     clickPath: '/wedding-package',
   },

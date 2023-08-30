@@ -1,7 +1,7 @@
 import ServiceList from '../ServiceList';
 import ServiceItem from '../ServiceItem';
 import Button from '../Button';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface WeddingVideoBlockProps {
   title: string;
@@ -95,9 +95,9 @@ const WeddingVideoBlock = ({
       ) : null}
       {hasButton ? (
         <div className="flex justify-center mt-[32px]">
-          <Button style="w-[100%]" clicked={handleMoveToBook}>
-            Book Now
-          </Button>
+          <Link to="/book/#book">
+            <Button style="w-[100%]">Book Now</Button>
+          </Link>
         </div>
       ) : null}
     </div>

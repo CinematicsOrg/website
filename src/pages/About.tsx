@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/blocks/Footer';
 import AboutClientsImage from '../components/blocks/AboutClientsImage';
 import Button from '../components/Button';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const paragraphContentList = [
   `CINEMATICS is an event and experience company that excels in creating exceptional digital content for a wide
@@ -21,12 +21,6 @@ const paragraphContentList = [
 ];
 
 const About = () => {
-  const navigate = useNavigate();
-
-  const handleMoveToBook = () => {
-    navigate('/book');
-  };
-
   const paragraphContent = paragraphContentList.map((p) => (
     <AboutParagraph key={p} content={p} classDef="my-[16px] md:my-[24px]" />
   ));
@@ -70,9 +64,11 @@ const About = () => {
           <AboutClientsImage />
 
           <div className="flex justify-center">
-            <Button style="w-[100%] md:w-[auto]" clicked={handleMoveToBook}>
-              Book a CINEMATICS experience
-            </Button>
+            <Link to="/book/#book">
+              <Button style="w-[100%] md:w-[auto]">
+                Book a CINEMATICS experience
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ import CorporatePhotography from '../pages/CorporatePhotography';
 import CorporateGallery from '../pages/CorporateGallery';
 import WeddingGallery from '../pages/WeddingGallery';
 import VirtualRealityGallery from '../pages/VirtualRealityGallery';
-import PhotoBoothGallery from '../pages/PhotoBoothGallery';
+import ThreeSixtyVideoBoothGallery from '../pages/ThreeSixtyVideoBoothGallery.tsx';
 import VideoBoothGallery from '../pages/VideoBoothGallery';
 
 const ManiRoutes = () => {
@@ -24,7 +24,7 @@ const ManiRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/gallery" element={<Home />} />
+        {/* <Route path="/gallery" element={<Home />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
@@ -41,7 +41,10 @@ const ManiRoutes = () => {
         <Route path="/gallery-corporate" element={<CorporateGallery />} />
         <Route path="/gallery-wedding" element={<WeddingGallery />} />
         <Route path="/gallery-virtual" element={<VirtualRealityGallery />} />
-        <Route path="/gallery-photo" element={<PhotoBoothGallery />} />
+        <Route
+          path="/gallery-360-video"
+          element={<ThreeSixtyVideoBoothGallery />}
+        />
         <Route path="/gallery-video" element={<VideoBoothGallery />} />
         <Route path="*" element={<NotFoundError />} />
       </Routes>

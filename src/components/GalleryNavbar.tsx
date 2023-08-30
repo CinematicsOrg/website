@@ -62,7 +62,7 @@ const GalleryNavbar = () => {
               location.pathname === '/gallery-photo' ? 'text-[black]' : ''
             }`}
           >
-            <Link to="/gallery-photo">PHOTO BOOTH</Link>
+            <Link to="/gallery-360-video">360 VIDEO BOOTH</Link>
           </div>
           <div
             className={`whitespace-nowrap ml-[5px] border-b ${

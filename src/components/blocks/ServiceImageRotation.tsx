@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import Image from '../Image';
 import { useNavigate } from 'react-router-dom';
-import { IServiceContent } from '../../utils/interface';
+import { ILink, IServiceContent } from '../../utils/interface';
 
 interface ServiceImageRotationProps {
-  imageList: IServiceContent[];
+  imageList: (IServiceContent & ILink & { img?: string; content?: string })[];
 }
 
 const ServiceImageRotation = ({ imageList }: ServiceImageRotationProps) => {
@@ -42,7 +42,13 @@ const ServiceImageRotation = ({ imageList }: ServiceImageRotationProps) => {
         }`}
         content={imageList[currentIndex].content}
         key={imageList[currentIndex].content}
-        clicked={() => handleImageClicked(imageList[currentIndex].clickPath)}
+        clicked={() =>
+          handleImageClicked(
+            imageList[currentIndex].clickPath
+              ? imageList[currentIndex].clickPath
+              : imageList[currentIndex].path
+          )
+        }
         imageList={imageList}
         currentIndex={currentIndex}
         paginationClicked={handlePaginationClick}

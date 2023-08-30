@@ -1,13 +1,14 @@
 import Navbar from '../components/Navbar';
 import Button from '../components/Button';
 import Footer from '../components/blocks/Footer';
-import Services from '../components/blocks/Services';
 import HomeImages from '../components/blocks/HomeImages';
-import { useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
-import { serviceList } from '../utils/constants';
+import { galleryLinks } from '../utils/constants';
 import ContactSocials from '../components/blocks/ContactSocials';
 import GalleryNavbar from '../components/GalleryNavbar';
+import { useEffect } from 'react';
+import GalleryServices from '../components/blocks/GalleryServices';
 
 const ImageList1 = [
   `bg-[url('/images/cinematics_1.png')]`,
@@ -24,11 +25,20 @@ const ImageList2 = [
 ];
 
 const Home = () => {
-  const navigate = useNavigate();
+  const location = useLocation();
+  const galleryList = galleryLinks.slice(1);
+  console.log({ galleryList });
 
-  const handleMoveToBook = () => {
-    navigate('/book');
-  };
+  useEffect(() => {
+    console.log({ location });
+    if (location.hash) {
+      const target = document.querySelector(location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <div>
       <div className="md:hidden sticky top-0 z-[10000]">
@@ -52,9 +62,9 @@ const Home = () => {
             with our professional team to bring your unique narrative to life.
           </div>
           <div className="flex justify-center mb-[15px] md:mb-0">
-            <Button style="w-[100%] md:w-[auto]" clicked={handleMoveToBook}>
-              Book a Service
-            </Button>
+            <Link to="/book/#book">
+              <Button style="w-[100%] md:w-[auto]">Book a Service</Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -70,21 +80,23 @@ const Home = () => {
           our professional team to bring your unique narrative to life.
         </div>
         <div className="flex justify-center mb-[15px] md:mb-0">
-          <Button style="w-[100%] md:w-[auto]" clicked={handleMoveToBook}>
-            Book a Service
-          </Button>
+          <Link to="/book/#book">
+            <Button style="w-[100%] md:w-[auto]">Book a Service</Button>
+          </Link>
         </div>
       </div>
-      <div className="flex justify-center font-bold text-[black] text-[24px] md:text-[32px] bg-[white] pt-[40px] pb-[15px] md:pt-[80px] md:pb-[32px]">
-        PORTFOLIO
+      <div id="galleryNavbar">
+        <div className="flex justify-center font-bold text-[black] text-[24px] md:text-[32px] bg-[white] pt-[40px] pb-[15px] md:pt-[80px] md:pb-[32px]">
+          PORTFOLIO
+        </div>
+        <GalleryNavbar />
       </div>
-      <GalleryNavbar />
       <div className="py-[54px] px-[16px] md:px-[79px] font-inter bg-[white]">
         <div className="hidden md:block md:pb-[58px]">
-          <Services />
+          <GalleryServices />
         </div>
         <div className="md:hidden">
-          <ServiceImageRotation imageList={serviceList} />
+          <ServiceImageRotation imageList={galleryList} />
         </div>
         <div className="text-lblack mb-[15px] md:mb-[45px] text-center font-bold text-[24px] md:text-[36px]">
           Celebrate life extraordinary moments through the lens of our passion
