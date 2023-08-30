@@ -54,7 +54,7 @@ export const serviceList: IServiceContent[] = [
     clickPath: '/corporate-events',
   },
   {
-    img: `bg-[url('/images/cinematics_wedding.png')]`,
+    img: `col-span-2  bg-[url('/images/cinematics_wedding.png')]`,
     content: 'Wedding Videos',
     clickPath: '/wedding-package',
   },
