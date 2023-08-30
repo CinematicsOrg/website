@@ -1,7 +1,7 @@
 import ServiceList from '../ServiceList';
 import ServiceItem from '../ServiceItem';
 import Button from '../Button';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface WeddingVideoBlockProps {
   title: string;
@@ -26,12 +26,6 @@ const WeddingVideoBlock = ({
   extraServiceList2,
   hasButton,
 }: WeddingVideoBlockProps) => {
-  const navigate = useNavigate();
-
-  const handleMoveToBook = () => {
-    navigate('/book');
-  };
-
   const serviceContent1 = extraServiceList1?.map((i, index) => {
     return (
       <div key={index} className="mb-[10px] md:mb-[20px]">

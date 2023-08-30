@@ -9,10 +9,14 @@ const GalleryNavbar = () => {
       <div
         key={index}
         className={`border-b mx-[14px] ${
-          location.pathname === i.path ? 'text-[black]' : ''
+          location.pathname === i.clickPath ||
+          (location.hash === '#galleryNavbar' &&
+            i.clickPath === '/#galleryNavbar')
+            ? 'text-[black]'
+            : ''
         }`}
       >
-        <Link to={i.path}>{i.text}</Link>
+        <Link to={i.clickPath ? i.clickPath : '#'}>{i.text}</Link>
       </div>
     );
   });
@@ -26,9 +30,13 @@ const GalleryNavbar = () => {
       <div className="flex flex-col justify-center text-[13px] leading-[17px] md:hidden">
         <div className="flex justify-center my-[15px] leading-[17px]">
           <span
-            className={`border-b ${
-              location.pathname === '/' ? 'text-[black]' : ''
-            } inline-block`}
+            className={`border-b
+            ${
+              location.pathname === '/#galleryNavbar' ||
+              (location.hash === '#galleryNavbar' && location.pathname === '/')
+                ? 'text-[black]'
+                : ''
+            } ${location.pathname === '/' ? 'text-[black]' : ''} inline-block`}
           >
             <Link to="/">ALL</Link>
           </span>

@@ -27,10 +27,8 @@ const ImageList2 = [
 const Home = () => {
   const location = useLocation();
   const galleryList = galleryLinks.slice(1);
-  console.log({ galleryList });
 
   useEffect(() => {
-    console.log({ location });
     if (location.hash) {
       const target = document.querySelector(location.hash);
       if (target) {

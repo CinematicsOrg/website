@@ -16,11 +16,11 @@ const GalleryServices = () => {
       <Image
         paragraphClassDef={`text-center mb-4 font-bold`}
         classDef={`${services.img} ${
-          services.path ? 'hover:cursor-pointer hover:shadow-2xl' : ''
+          services.clickPath ? 'hover:cursor-pointer hover:shadow-2xl' : ''
         }`}
         content={services.content}
         key={index}
-        clicked={() => handleImageClicked(services.path)}
+        clicked={() => handleImageClicked(services.clickPath)}
       />
     );
   });

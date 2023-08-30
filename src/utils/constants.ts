@@ -9,38 +9,39 @@ export const links: ILink[] = [
   { path: '/contact', text: 'Contact' },
 ];
 
-export const galleryLinks: (ILink & { img?: string; content?: string })[] = [
+export const galleryLinks: IServiceContent[] = [
   {
     text: 'ALL',
-    path: '/',
+    clickPath: '/#galleryNavbar',
+    img: '',
   },
   {
     text: 'CORPORATE',
-    path: '/gallery-corporate',
+    clickPath: '/gallery-corporate',
     content: 'Corporate',
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_corporate.png')]`,
   },
   {
     text: 'WEDDING',
-    path: '/gallery-wedding',
+    clickPath: '/gallery-wedding',
     content: 'Wedding',
     img: `col-span-1 row-span-2 bg-[url('/images/cinematics_wedding.png')]`,
   },
   {
     text: 'VIRTUAL REALITY',
-    path: '/gallery-virtual',
+    clickPath: '/gallery-virtual',
     content: 'Virtual Reality',
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_360.png')]`,
   },
   {
     text: '360 VIDEO BOOTH',
-    path: '/gallery-360-video',
+    clickPath: '/gallery-360-video',
     content: '360 Video booth',
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_reality.png')]`,
   },
   {
     text: 'VIDEO BOOTH',
-    path: '/gallery-video',
+    clickPath: '/gallery-video',
     content: 'Video Booth',
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_photobooth.png')]`,
   },

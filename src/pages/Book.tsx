@@ -19,7 +19,6 @@ const Book = () => {
 
   useEffect(() => {
     if (location.hash) {
-      console.log({ hasHash: location.hash });
       const target = document.querySelector(location.hash);
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });

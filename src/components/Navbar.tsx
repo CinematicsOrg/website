@@ -26,7 +26,9 @@ const Navbar = ({ logoPath, bgColour }: NavbarProps) => {
       (location.pathname === '/corporate-photography' &&
         link.path === '/services') ||
       (location.pathname === '/photo-booth' && link.path === '/services') ||
-      (location.pathname === '/event-photography' && link.path === '/services')
+      (location.pathname === '/event-photography' &&
+        link.path === '/services') ||
+      (location.pathname.includes('gallery') && link.path.includes('gallery'))
     ) {
       return 'text-dred font-bold';
     } else {

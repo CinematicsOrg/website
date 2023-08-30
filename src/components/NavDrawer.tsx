@@ -17,13 +17,16 @@ const NavDrawer = () => {
       (location.pathname === '/corporate-photography' &&
         link.path === '/services') ||
       (location.pathname === '/photo-booth' && link.path === '/services') ||
-      (location.pathname === '/event-photography' && link.path === '/services')
+      (location.pathname === '/event-photography' &&
+        link.path === '/services') ||
+      (location.pathname.includes('gallery') && link.path.includes('gallery'))
     ) {
       return 'text-dred font-bold';
     } else {
       return '';
     }
   };
+
   return (
     <div
       className="flex flex-col items-center w-[156px] text-center font-inter p-[12px] bg-[white] md:hidden"
