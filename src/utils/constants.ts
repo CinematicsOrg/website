@@ -5,6 +5,7 @@ export const links: ILink[] = [
   { path: '/about', text: 'About Us' },
   { path: '/services', text: 'Services' },
   { path: '/#galleryNavbar', text: 'Gallery' },
+  { path: 'https://cinematicsng.blogspot.com/', text: 'Blog' },
   { path: '/book', text: 'Book Now' },
   { path: '/contact', text: 'Contact' },
 ];

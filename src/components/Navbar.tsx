@@ -73,9 +73,19 @@ const Navbar = ({ logoPath, bgColour }: NavbarProps) => {
                 link
               )}`}
             >
-              <Link to={link.path}>
-                <span>{link.text}</span>
-              </Link>
+              {link.text !== 'Blog' ? (
+                <Link to={link.path}>
+                  <span>{link.text}</span>
+                </Link>
+              ) : (
+                <a
+                  href="https://cinematicsng.blogspot.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.text}
+                </a>
+              )}
             </div>
           ))}
         </div>

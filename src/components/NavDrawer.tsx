@@ -44,9 +44,19 @@ const NavDrawer = () => {
             link
           )} hover:shadow-sm w-full`}
         >
-          <Link to={link.path}>
-            <span className="h-[22px]">{link.text}</span>
-          </Link>
+          {link.text !== 'Blog' ? (
+            <Link to={link.path}>
+              <span className="h-[22px]">{link.text}</span>
+            </Link>
+          ) : (
+            <a
+              href="https://cinematicsng.blogspot.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.text}
+            </a>
+          )}
         </div>
       ))}
     </div>
