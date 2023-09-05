@@ -1,4 +1,4 @@
-import { ILink, IServiceContent, IYoutubeLinks } from './interface';
+import { ILink, IServiceContent } from './interface';
 
 export const links: ILink[] = [
   { path: '/', text: 'Home' },
