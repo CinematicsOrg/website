@@ -60,10 +60,10 @@ const GalleryNavbar = () => {
         <div className="flex items-center justify-around">
           <div
             className={`whitespace-nowrap border-b ${
-              location.pathname === '/gallery-virtual' ? 'text-[black]' : ''
+              location.pathname === '/gallery-birthday' ? 'text-[black]' : ''
             }`}
           >
-            <Link to="/gallery-virtual">VIRTUAL REALITY</Link>
+            <Link to="/gallery-birthday">Birthday</Link>
           </div>
           <div
             className={`whitespace-nowrap border-b ${

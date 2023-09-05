@@ -29,9 +29,9 @@ export const galleryLinks: IServiceContent[] = [
     img: `col-span-1 row-span-2 bg-[url('/images/cinematics_wedding.png')]`,
   },
   {
-    text: 'VIRTUAL REALITY',
-    clickPath: '/gallery-virtual',
-    content: 'Virtual Reality',
+    text: 'BIRTHDAY',
+    clickPath: '/gallery-birthday',
+    content: 'Birthday',
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_360.png')]`,
   },
   {

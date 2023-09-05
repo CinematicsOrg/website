@@ -14,9 +14,9 @@ import PhotoBooth from '../pages/PhotoBooth';
 import CorporatePhotography from '../pages/CorporatePhotography';
 import CorporateGallery from '../pages/CorporateGallery';
 import WeddingGallery from '../pages/WeddingGallery';
-import VirtualRealityGallery from '../pages/VirtualRealityGallery';
 import ThreeSixtyVideoBoothGallery from '../pages/ThreeSixtyVideoBoothGallery.tsx';
 import VideoBoothGallery from '../pages/VideoBoothGallery';
+import BirthdayGallery from '../pages/BirthdayGallery.tsx';
 
 const ManiRoutes = () => {
   return (
@@ -24,7 +24,7 @@ const ManiRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        {/* <Route path="/gallery" element={<Home />} /> */}
+        <Route path="/gallery" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
@@ -40,7 +40,7 @@ const ManiRoutes = () => {
         <Route path="/virtual-reality" element={<VirtualReality />} />
         <Route path="/gallery-corporate" element={<CorporateGallery />} />
         <Route path="/gallery-wedding" element={<WeddingGallery />} />
-        <Route path="/gallery-virtual" element={<VirtualRealityGallery />} />
+        <Route path="/gallery-birthday" element={<BirthdayGallery />} />
         <Route
           path="/gallery-360-video"
           element={<ThreeSixtyVideoBoothGallery />}
