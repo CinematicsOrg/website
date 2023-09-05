@@ -63,7 +63,7 @@ const GalleryNavbar = () => {
               location.pathname === '/gallery-birthday' ? 'text-[black]' : ''
             }`}
           >
-            <Link to="/gallery-birthday">Birthday</Link>
+            <Link to="/gallery-birthday">BIRTHDAY</Link>
           </div>
           <div
             className={`whitespace-nowrap border-b ${
