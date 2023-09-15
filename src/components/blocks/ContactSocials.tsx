@@ -69,7 +69,7 @@ const ContactSocials = () => {
               </a>
             </div>
             <p className="font-poppins text-[14px] md:text-[20px]">
-              cinematicsng
+              @cinematicsng
             </p>
           </div>
         </div>
@@ -96,13 +96,13 @@ const ContactSocials = () => {
           </p>
           <a href="tel:+2349030003360">
             <p className="font-poppins text-[14px] mb-[24px] md:text-[20px]">
-              <AddIcCallOutlinedIcon className="mr-[8px]" />
+              <AddIcCallOutlinedIcon className="mr-[8px] text-[green]" />
               +2349030003360
             </p>
           </a>
           <a href="tel:+2348032008916">
             <p className="font-poppins text-[14px] md:text-[20px]">
-              <AddIcCallOutlinedIcon className="mr-[8px]" />
+              <AddIcCallOutlinedIcon className="mr-[8px] text-[green]" />
               +2348032008916
             </p>
           </a>

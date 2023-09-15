@@ -35,15 +35,15 @@ export const galleryLinks: IServiceContent[] = [
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_360.png')]`,
   },
   {
-    text: '360 VIDEO BOOTH',
+    text: '360VIDEOBOOTH',
     clickPath: '/gallery-360-video',
-    content: '360 Video booth',
+    content: '360videobooth',
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_reality.png')]`,
   },
   {
-    text: 'VIDEO BOOTH',
+    text: 'VIDEOBOOTH EXPERIENCE',
     clickPath: '/gallery-video',
-    content: 'Video Booth',
+    content: 'Videobooth Experience',
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_photobooth.png')]`,
   },
 ];

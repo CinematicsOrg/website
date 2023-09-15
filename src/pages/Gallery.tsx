@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import GalleryNavbar from '../components/GalleryNavbar';
 import Navbar from '../components/Navbar';
 import YoutubeVideo from '../components/YoutubeVideo';
 import Footer from '../components/blocks/Footer';
 import { IYoutubeLinks } from '../utils/interface';
+import Button from '../components/Button';
 
 interface GalleryProps {
   youtubeList: IYoutubeLinks[];
@@ -31,6 +33,11 @@ const Gallery = ({ youtubeList }: GalleryProps) => {
         <GalleryNavbar />
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 my-[10px] md:my-[60px]">
           {content}
+        </div>
+        <div className="md:flex justify-center mt-[32px] mb-[60px]">
+          <Link to="/book/#book">
+            <Button style="w-[100%]">Book Now</Button>
+          </Link>
         </div>
       </div>
 

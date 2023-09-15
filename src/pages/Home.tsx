@@ -85,7 +85,7 @@ const Home = () => {
       </div>
       <div id="galleryNavbar">
         <div className="flex justify-center font-bold text-[black] text-[24px] md:text-[32px] bg-[white] pt-[40px] pb-[15px] md:pt-[80px] md:pb-[32px]">
-          PORTFOLIO
+          GALLERY
         </div>
         <GalleryNavbar />
       </div>
