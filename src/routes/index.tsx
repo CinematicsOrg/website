@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Services from '../pages/Services';
@@ -17,10 +17,22 @@ import WeddingGallery from '../pages/WeddingGallery';
 import ThreeSixtyVideoBoothGallery from '../pages/ThreeSixtyVideoBoothGallery.tsx';
 import VideoBoothGallery from '../pages/VideoBoothGallery';
 import BirthdayGallery from '../pages/BirthdayGallery.tsx';
+import { useEffect } from 'react';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const ManiRoutes = () => {
   return (
     <BrowserRouter basename={'/'}>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

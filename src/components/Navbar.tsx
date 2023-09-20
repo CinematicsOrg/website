@@ -74,7 +74,7 @@ const Navbar = ({ logoPath, bgColour }: NavbarProps) => {
               )}`}
             >
               {link.text !== 'Blog' ? (
-                <Link to={link.path}>
+                <Link preventScrollReset={true} to={link.path}>
                   <span>{link.text}</span>
                 </Link>
               ) : (
