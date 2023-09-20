@@ -60,7 +60,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_2.png',
   },
   {
     title: 'Mirror Booth',
@@ -70,7 +70,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_1.png',
   },
   {
     title: 'Favorite Razor Booth',
@@ -80,7 +80,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_2.png',
   },
 ];
 

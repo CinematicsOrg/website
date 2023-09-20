@@ -158,7 +158,7 @@ const packagesList = [
     description:
       'Wedding documentary filming would include; Arrivals, Family reunion, Dress fittings, Bridal shower / Bachelorette, Rehearsal, Pre-wedding / Wedding.',
     featuresList: premiumPlatinumFeaturesList,
-    featureImgPath: 'images/cinematics_premiumdeliverables.png',
+    featureImgPath: 'images/cinematics_premiumfeatures.png',
     deliverablesList: premiumPlanDeliverablesList,
     deliverablesImgPath: 'images/cinematics_premiumdeliverables.png',
     extraServiceList1: serviceList1,
@@ -170,7 +170,7 @@ const packagesList = [
     description:
       'Wedding documentary filming would include; Arrivals, Dress fittings, Bridal shower / Bachelorette, Pre-wedding / Wedding.',
     featuresList: premiumExecutiveFeaturesList,
-    featureImgPath: 'images/cinematics_executivedeliverables.png',
+    featureImgPath: 'images/cinematics_executivefeatures.png',
     deliverablesList: premiumExecutiveDeliverablesList,
     deliverablesImgPath: 'images/cinematics_executivedeliverables.png',
     hasButton: true,

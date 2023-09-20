@@ -192,7 +192,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth.png',
   },
   {
     title: '360 Booth Galaxy',
@@ -202,7 +202,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_1.png',
   },
   {
     title: 'Maze Booth',
@@ -212,7 +212,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_2.png',
   },
   {
     title: 'Box Booth',
@@ -222,7 +222,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth.png',
   },
   {
     title: 'Runway Booth Galaxy',
@@ -232,7 +232,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_1.png',
   },
   {
     title: 'Elevator Booth',
@@ -242,7 +242,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_2.png',
   },
   {
     title: 'Screen Booth',
@@ -252,7 +252,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth.png',
   },
   {
     title: 'Flip Cam Booth',
@@ -262,7 +262,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_1.png',
   },
   {
     title: 'Show glass booth',
@@ -272,7 +272,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_2.png',
   },
   {
     title: 'Client Customized Booth',
@@ -282,7 +282,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth.png',
   },
   {
     title: 'Product Experience',
@@ -292,17 +292,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
-  },
-  {
-    title: 'Product Experience',
-    featuresList: productExperienceFeaturesList,
-    deliverablesList: productExperienceDeliverablesList,
-    hasFeaturesTitle: true,
-    hasFeaturesImg: false,
-    hasDeliverableImg: false,
-    hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_video_booth_1.png',
   },
 ];
 

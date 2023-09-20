@@ -32,13 +32,13 @@ export const galleryLinks: IServiceContent[] = [
     text: 'BIRTHDAY',
     clickPath: '/gallery-birthday',
     content: 'Birthday',
-    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_360.png')]`,
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_birthday.png')]`,
   },
   {
     text: '360VIDEOBOOTH',
     clickPath: '/gallery-360-video',
     content: '360videobooth',
-    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_reality.png')]`,
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_videobooth.png')]`,
   },
   {
     text: 'VIDEOBOOTH EXPERIENCE',
@@ -50,7 +50,7 @@ export const galleryLinks: IServiceContent[] = [
 
 export const serviceList: IServiceContent[] = [
   {
-    img: `bg-[url('/images/cinematics_corporate.png')]`,
+    img: `bg-[url('/images/cinematics_product.png')]`,
     content: 'Corporate Event Videography',
     clickPath: '/corporate-events',
   },
@@ -60,34 +60,34 @@ export const serviceList: IServiceContent[] = [
     clickPath: '/wedding-package',
   },
   {
-    img: `bg-[url('/images/cinematics_product.png')]`,
+    img: `bg-[url('/images/cinematics_corporate.png')]`,
     content: 'Corporate Photography Package',
     clickPath: '/corporate-photography',
   },
   {
-    img: `bg-[url('/images/cinematics_documentary.png')]`,
+    img: `bg-[url('/images/cinematics_event_photography.png')]`,
     content: 'Event Photography Package',
     clickPath: '/event-photography',
   },
   {
-    img: `bg-[url('/images/cinematics_360.png')]`,
+    img: `bg-[url('/images/cinematics_virtual_reality.png')]`,
     content: 'Virtual Reality Package',
     clickPath: '/virtual-reality',
   },
   {
-    img: `col-span-2 bg-[url('/images/cinematics_photobooth.png')]`,
+    img: `col-span-2 bg-[url('/images/cinematics_videobooth.png')]`,
     content: 'Video Booth Package',
     clickPath: '/video-booth',
   },
   {
-    img: `bg-[url('/images/cinematics_reality.png')]`,
+    img: `bg-[url('/images/cinematics_photobooth.png')]`,
     content: 'Photo Booth Package',
     clickPath: '/photo-booth',
   },
 ];
 
 export const bookScrollingImages = [
-  { img: `bg-[url('/images/cinematics_corporate.png')]` },
+  { img: `bg-[url('/images/cinematics_12.png')]` },
   { img: `bg-[url('/images/cinematics_10.png')]` },
   { img: `bg-[url('/images/cinematics_9.png')]` },
 ];

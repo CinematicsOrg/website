@@ -40,7 +40,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: false,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_corporate_ultimate.png',
   },
   {
     title: 'Advanced',
@@ -49,7 +49,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: false,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_corporate_advanced.png',
   },
   {
     title: 'Standard',
@@ -58,7 +58,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: false,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_corporate_ultimate.png',
   },
 ];
 

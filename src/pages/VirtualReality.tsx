@@ -45,7 +45,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_ringvr.png',
   },
   {
     title: 'Box VR',
@@ -55,7 +55,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: true,
-    deliverablesImgPath: '/images/cinematics_photobooth1.png',
+    deliverablesImgPath: '/images/cinematics_boxvr.png',
   },
 ];
 

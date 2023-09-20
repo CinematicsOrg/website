@@ -9,7 +9,7 @@ import { bookScrollingImages } from '../utils/constants';
 import { useEffect } from 'react';
 
 const ImageList = [
-  `bg-[url('/images/cinematics_corporate.png')]`,
+  `bg-[url('/images/cinematics_12.png')]`,
   `bg-[url('/images/cinematics_10.png')]`,
   `bg-[url('/images/cinematics_9.png')]`,
 ];
