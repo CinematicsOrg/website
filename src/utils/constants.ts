@@ -35,16 +35,16 @@ export const galleryLinks: IServiceContent[] = [
     img: `col-span-1 row-span-1 bg-[url('/images/cinematics_birthday.png')]`,
   },
   {
-    text: '360VIDEOBOOTH',
-    clickPath: '/gallery-360-video',
-    content: '360videobooth',
-    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_videobooth.png')]`,
-  },
-  {
     text: 'VIDEOBOOTH EXPERIENCE',
     clickPath: '/gallery-video',
     content: 'Videobooth Experience',
-    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_photobooth.png')]`,
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_videobooth.png')]`,
+  },
+  {
+    text: '360VIDEOBOOTH',
+    clickPath: '/gallery-360-video',
+    content: '360videobooth',
+    img: `col-span-1 row-span-1 bg-[url('/images/cinematics_360_gallery.png')]`,
   },
 ];
 
@@ -76,12 +76,12 @@ export const serviceList: IServiceContent[] = [
   },
   {
     img: `col-span-2 bg-[url('/images/cinematics_videobooth.png')]`,
-    content: 'Video Booth Package',
+    content: 'Videobooth Package',
     clickPath: '/video-booth',
   },
   {
     img: `bg-[url('/images/cinematics_photobooth.png')]`,
-    content: 'Photo Booth Package',
+    content: 'Photobooth Package',
     clickPath: '/photo-booth',
   },
 ];
