@@ -20,7 +20,6 @@ const CorporateServiceList = ({
     <div className="text-[16px] leading-[24px] md:text-[20px] md:leading-[30px]">
       <div className="font-medium mb-[8px] pt-[24px] md:mb-[50px]">{title}</div>
       <div className="md:hidden">
-        <div className="mb-[31px]">{listContent}</div>
         <div className="flex items-center justify-center">
           <img
             src={imgPath}
@@ -28,6 +27,7 @@ const CorporateServiceList = ({
             className="object-cover h-full max-h-full"
           />
         </div>
+        <div className="mb-[31px]">{listContent}</div>
       </div>
       <div className="hidden md:block mt-[21px] mb-[32px]">
         {!reverse ? (

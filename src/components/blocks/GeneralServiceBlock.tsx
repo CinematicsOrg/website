@@ -36,6 +36,13 @@ const GeneralServiceBlock = ({
   };
   return (
     <div>
+      <div>
+        <img
+          src={deliverablesImgPath}
+          alt="Image"
+          className="object-cover max-w-[100%] w-[100%] h-[221px] md:h-[350px] md:mt-[45px]"
+        />
+      </div>
       <div className="mt-[30px] md:mt-[45px] font-dancing font-bold text-[24px] md:text-[64px] leading-[30px] md:leading-[44px]">
         {title}
       </div>
@@ -62,13 +69,6 @@ const GeneralServiceBlock = ({
             />
           </div>
         ) : null}
-      </div>
-      <div>
-        <img
-          src={deliverablesImgPath}
-          alt="Image"
-          className="object-cover max-w-[100%] w-[100%] h-[221px] md:h-[350px] md:mt-[45px]"
-        />
       </div>
       <div className="flex justify-center mt-[32px]">
         <Button style="w-[100%]" clicked={handleMoveToBook}>

@@ -1,32 +1,30 @@
 import Navbar from '../components/Navbar';
 import Button from '../components/Button';
 import Footer from '../components/blocks/Footer';
-import HomeImages from '../components/blocks/HomeImages';
 import { Link, useLocation } from 'react-router-dom';
-import ServiceImageRotation from '../components/blocks/ServiceImageRotation';
-import { galleryLinks } from '../utils/constants';
+// import { galleryLinks } from '../utils/constants';
 import ContactSocials from '../components/blocks/ContactSocials';
 import GalleryNavbar from '../components/GalleryNavbar';
 import { useEffect } from 'react';
 import GalleryServices from '../components/blocks/GalleryServices';
 
-const ImageList1 = [
-  `bg-[url('/images/cinematics_1.png')]`,
-  `bg-[url('/images/cinematics_2.png')]`,
-  `col-start-1 col-span-2 bg-[url('/images/cinematics_3.png')]`,
-  `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_4.png')]`,
-];
+// const ImageList1 = [
+//   `bg-[url('/images/cinematics_1.png')]`,
+//   `bg-[url('/images/cinematics_2.png')]`,
+//   `col-start-1 col-span-2 bg-[url('/images/cinematics_3.png')]`,
+//   `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_4.png')]`,
+// ];
 
-const ImageList2 = [
-  `bg-[url('/images/cinematics_5.png')]`,
-  `bg-[url('/images/cinematics_6.png')]`,
-  `col-start-1 col-span-2 bg-[url('/images/cinematics_7.png')]`,
-  `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_8.png')]`,
-];
+// const ImageList2 = [
+//   `bg-[url('/images/cinematics_5.png')]`,
+//   `bg-[url('/images/cinematics_6.png')]`,
+//   `col-start-1 col-span-2 bg-[url('/images/cinematics_7.png')]`,
+//   `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_8.png')]`,
+// ];
 
 const Home = () => {
   const location = useLocation();
-  const galleryList = galleryLinks.slice(1);
+  // const galleryList = galleryLinks.slice(1);
 
   useEffect(() => {
     if (location.hash) {
@@ -90,18 +88,18 @@ const Home = () => {
         <GalleryNavbar />
       </div>
       <div className="py-[54px] px-[16px] md:px-[79px] font-inter bg-[white]">
-        <div className="hidden md:block md:pb-[58px]">
+        <div className="md:pb-[58px]">
           <GalleryServices />
         </div>
-        <div className="md:hidden">
+        {/* <div className="md:hidden">
           <ServiceImageRotation imageList={galleryList} />
-        </div>
-        <div className="text-lblack mb-[15px] md:mb-[45px] text-center font-bold text-[24px] md:text-[36px]">
+        </div> */}
+        {/* <div className="text-lblack mb-[15px] md:mb-[45px] text-center font-bold text-[24px] md:text-[36px]">
           Celebrate life extraordinary moments through the lens of our passion
           and expertise
         </div>
         <HomeImages ImageList={ImageList1} />
-        <HomeImages ImageList={ImageList2} />
+        <HomeImages ImageList={ImageList2} /> */}
       </div>
       <ContactSocials />
       <Footer />

@@ -88,30 +88,31 @@ const packageList = [
   {
     title: 'Pro Executive Package',
     featuresList: proExecutiveFeaturesList,
-    featureImgPath: 'images/cinematics_proexecutivefeatures.png',
+    featureImgPath: '/images/cinematics_proexecutivefeatures.png',
     deliverablesList: proExecutiveDeliverablesList,
-    deliverablesImgPath: 'images/cinematics_proexecutivedeliverables.png',
+    deliverablesImgPath: '/images/cinematics_proexecutivedeliverables.png',
   },
   {
     title: 'Executive Package',
     featuresList: executiveFeaturesList,
-    featureImgPath: 'images/cinematics_corporateexecutivefeaturesList.png',
+    featureImgPath: '/images/cinematics_corporateexecutivefeaturesList.png',
     deliverablesList: executiveDeliverablesList,
-    deliverablesImgPath: 'images/cinematics_corporateexecutivedeliverables.png',
+    deliverablesImgPath:
+      '/images/cinematics_corporateexecutivedeliverables.png',
   },
   {
     title: 'Diamond Package',
     featuresList: diamondFeaturesList,
-    featureImgPath: 'images/cinematics_corporatediamondfeatures.png',
+    featureImgPath: '/images/cinematics_proexecutivefeatures.png',
     deliverablesList: diamondDeliverablesList,
-    deliverablesImgPath: 'images/cinematics_corporatediamonddeliverables.png',
+    deliverablesImgPath: '/images/cinematics_corporatediamonddeliverables.png',
   },
   {
     title: 'Gold Package',
     featuresList: goldFeaturesList,
-    featureImgPath: 'images/cinematics_corporategoldfeatures.png',
+    featureImgPath: '/images/cinematics_corporategoldfeatures.png',
     deliverablesList: goldDeliverablesList,
-    deliverablesImgPath: 'images/cinematics_corporategolddeliverables.png',
+    deliverablesImgPath: '/images/cinematics_corporategolddeliverables.png',
   },
 ];
 

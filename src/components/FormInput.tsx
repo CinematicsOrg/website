@@ -33,7 +33,7 @@ const FormInput = ({
         onChange={changed}
         value={value}
         placeholder={placeholder ? placeholder : undefined}
-        className={`h-[45px]  text-[black] text-[20px] p-2 ${classDef}`}
+        className={`h-[45px]  text-[black] dark:text-[white] text-[20px] p-2 ${classDef}`}
       />
       <span className="text-[red] text-xs lg:text-sm">{error}</span>
     </div>
