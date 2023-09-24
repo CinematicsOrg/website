@@ -70,7 +70,7 @@ const GeneralServiceBlock = ({
           </div>
         ) : null}
       </div>
-      <div className="flex justify-center mt-[32px]">
+      <div className="flex justify-center my-[32px]">
         <Button style="w-[100%]" clicked={handleMoveToBook}>
           Book Now
         </Button>
