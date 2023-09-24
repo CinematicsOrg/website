@@ -75,7 +75,7 @@ const Home = () => {
           beautifully told stories through stunning visuals. Book a service with
           our professional team to bring your unique narrative to life.
         </div>
-        <div className="flex justify-center mb-[15px] md:mb-0">
+        <div className="flex justify-center pb-[15px] md:mb-0">
           <Link to="/book/#book">
             <Button style="w-[100%] md:w-[auto]">Book a Service</Button>
           </Link>

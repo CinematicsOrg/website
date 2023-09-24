@@ -19,6 +19,13 @@ const CorporateEventBlock = ({
 }: CorporateEventBlockProps) => {
   return (
     <div>
+      <div className="md:hidden">
+        <img
+          src={featureImgPath}
+          alt="Image"
+          className="object-cover max-w-[100%] w-[100%] h-[221px] md:h-[350px] md:mt-[45px]"
+        />
+      </div>
       <div className="mt-[24px] mb-[8px] md:my-[45px] font-dancing font-bold text-[24px] leading-[30px] md:text-[64px] md:leading-[44px]">
         {title}
       </div>
@@ -29,6 +36,13 @@ const CorporateEventBlock = ({
           listItem={featuresList}
         />
       </div>
+      <div className="md:hidden">
+        <img
+          src={deliverablesImgPath}
+          alt="Image"
+          className="object-cover max-w-[100%] w-[100%] h-[221px] md:h-[350px] md:mt-[45px]"
+        />
+      </div>
       <div>
         <CorporateServiceList
           title="Deliverables"
@@ -37,7 +51,7 @@ const CorporateEventBlock = ({
           reverse={true}
         />
       </div>
-      <div className="flex justify-center mt-[32px]">
+      <div className="flex justify-center my-[32px]">
         <Link to="/book/#book">
           <Button style="w-[100%]">Book Now</Button>
         </Link>

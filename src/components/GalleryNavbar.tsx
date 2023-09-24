@@ -77,7 +77,7 @@ const GalleryNavbar = () => {
               location.pathname === '/gallery-video' ? 'text-[red]' : ''
             }`}
           >
-            <Link to="/gallery-video">VIDEO BOOTH</Link>
+            <Link to="/gallery-video">VIDEOBOOTH</Link>
           </div>
         </div>
       </div>

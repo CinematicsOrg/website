@@ -97,7 +97,7 @@ const WeddingVideoBlock = ({
         </div>
       ) : null}
       {hasButton ? (
-        <div className="flex justify-center mt-[32px]">
+        <div className="flex justify-center my-[32px]">
           <Link to="/book/#book">
             <Button style="w-[100%]">Book Now</Button>
           </Link>
