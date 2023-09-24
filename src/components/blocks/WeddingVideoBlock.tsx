@@ -43,6 +43,15 @@ const WeddingVideoBlock = ({
   });
   return (
     <div className="">
+      <div>
+        {featureImgPath ? (
+          <img
+            src={featureImgPath}
+            alt="Image"
+            className="object-cover max-w-[100%] w-[100%] h-[221px] md:h-[350px] md:mt-[45px]"
+          />
+        ) : null}
+      </div>
       <div className="mt-[30px] md:mt-[45px] font-dancing font-bold text-[24px] md:text-[64px] leading-[30px] md:leading-[44px]">
         {title}
       </div>
@@ -55,7 +64,7 @@ const WeddingVideoBlock = ({
         <div className="mt-[8px] md:mt-[45px]">
           <ServiceList
             title="Features"
-            imgPath={featureImgPath}
+            // imgPath={featureImgPath}
             listItem={featuresList}
           />
         </div>

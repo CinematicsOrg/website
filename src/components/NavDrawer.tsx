@@ -2,7 +2,11 @@ import { links } from '../utils/constants';
 import { Link, useLocation } from 'react-router-dom';
 import { ILink } from '../utils/interface';
 
-const NavDrawer = () => {
+interface NavDrawerProps {
+  clicked?: () => void;
+}
+
+const NavDrawer = ({ clicked }: NavDrawerProps) => {
   const location = useLocation();
 
   const locationDetector = (link: ILink) => {
@@ -43,6 +47,7 @@ const NavDrawer = () => {
           className={`px-[20px] py-[14px] text-[18px] font-bold text-[black] ${locationDetector(
             link
           )} hover:shadow-sm w-full`}
+          onClick={() => clicked && clicked()}
         >
           {link.text !== 'Blog' ? (
             <Link to={link.path}>

@@ -192,6 +192,7 @@ const packagesList = [
     featuresList: diamondFeaturesList,
     featureImgPath: 'images/cinematics_diamondfeatures.png',
     deliverablesList: diamondDeliverablesList,
+    deliverablesImgPath: 'images/cinematics_diamonddeliverables.png',
     hasButton: true,
   },
   {
@@ -201,6 +202,7 @@ const packagesList = [
     featuresList: goldFeaturesList,
     featureImgPath: 'images/cinematics_goldfeatures.png',
     deliverablesList: goldDeliverablesList,
+    deliverablesImgPath: 'images/cinematics_golddeliverables.png',
     hasButton: true,
   },
 ];

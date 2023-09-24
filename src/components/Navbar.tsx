@@ -36,7 +36,7 @@ const Navbar = ({ logoPath, bgColour }: NavbarProps) => {
     }
   };
 
-  const handleHamburgerClick = () => {
+  const handleToggleNavDrawer = () => {
     setShowNavDrawer(!showNavDrawer);
   };
 
@@ -89,7 +89,7 @@ const Navbar = ({ logoPath, bgColour }: NavbarProps) => {
             </div>
           ))}
         </div>
-        <div className="md:hidden" onClick={handleHamburgerClick}>
+        <div className="md:hidden" onClick={handleToggleNavDrawer}>
           {showNavDrawer ? (
             <img
               src="/svg/Hamburger_close.svg"
@@ -105,7 +105,7 @@ const Navbar = ({ logoPath, bgColour }: NavbarProps) => {
           )}
         </div>
       </nav>
-      {showNavDrawer ? <NavDrawer /> : null}
+      {showNavDrawer ? <NavDrawer clicked={handleToggleNavDrawer} /> : null}
     </div>
   );
 };
