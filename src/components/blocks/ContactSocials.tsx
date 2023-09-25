@@ -79,13 +79,13 @@ const ContactSocials = () => {
           </p>
           <a href="mailto:cinematicsng@gmail.com">
             <p className="font-poppins text-[14px] mb-[24px] md:text-[20px]">
-              <EmailOutlinedIcon className="mr-[8px]" />
+              <EmailOutlinedIcon className="mr-[8px] text-[green]" />
               cinematicsng@gmail.com
             </p>
           </a>
           <a href="mailto:info@cinematicsng.com">
             <p className="font-poppins text-[14px] md:text-[20px]">
-              <EmailOutlinedIcon className="mr-[8px]" />
+              <EmailOutlinedIcon className="mr-[8px] text-[green]" />
               info@cinematicsng.com
             </p>
           </a>
