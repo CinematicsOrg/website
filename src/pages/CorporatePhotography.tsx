@@ -58,7 +58,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: false,
-    deliverablesImgPath: '/images/cinematics_corporate_ultimate.png',
+    deliverablesImgPath: '/images/cinematics_corporate_standard.png',
   },
 ];
 

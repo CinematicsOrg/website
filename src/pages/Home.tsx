@@ -2,29 +2,14 @@ import Navbar from '../components/Navbar';
 import Button from '../components/Button';
 import Footer from '../components/blocks/Footer';
 import { Link, useLocation } from 'react-router-dom';
-// import { galleryLinks } from '../utils/constants';
 import ContactSocials from '../components/blocks/ContactSocials';
 import GalleryNavbar from '../components/GalleryNavbar';
 import { useEffect } from 'react';
 import GalleryServices from '../components/blocks/GalleryServices';
-
-// const ImageList1 = [
-//   `bg-[url('/images/cinematics_1.png')]`,
-//   `bg-[url('/images/cinematics_2.png')]`,
-//   `col-start-1 col-span-2 bg-[url('/images/cinematics_3.png')]`,
-//   `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_4.png')]`,
-// ];
-
-// const ImageList2 = [
-//   `bg-[url('/images/cinematics_5.png')]`,
-//   `bg-[url('/images/cinematics_6.png')]`,
-//   `col-start-1 col-span-2 bg-[url('/images/cinematics_7.png')]`,
-//   `row-start-1 row-span-2 col-start-3 bg-[url('/images/cinematics_8.png')]`,
-// ];
+import YoutubeVideo from '../components/YoutubeVideo';
 
 const Home = () => {
   const location = useLocation();
-  // const galleryList = galleryLinks.slice(1);
 
   useEffect(() => {
     if (location.hash) {
@@ -81,6 +66,15 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <div className="pt-[40px] md:py-[54px] px-[16px] md:px-[79px] bg-[white]">
+        <YoutubeVideo
+          videoSource={`https://www.youtube.com/embed/_pZNWOTXNms`}
+          autoPlay={1}
+          mute={1}
+          roundedAtTheEdge={false}
+          heigth="h-[360px] md:h-[700px]"
+        />
+      </div>
       <div id="galleryNavbar">
         <div className="flex justify-center font-bold text-[black] text-[24px] md:text-[32px] bg-[white] pt-[40px] pb-[15px] md:pt-[80px] md:pb-[32px]">
           GALLERY
@@ -91,15 +85,6 @@ const Home = () => {
         <div className="md:pb-[58px]">
           <GalleryServices />
         </div>
-        {/* <div className="md:hidden">
-          <ServiceImageRotation imageList={galleryList} />
-        </div> */}
-        {/* <div className="text-lblack mb-[15px] md:mb-[45px] text-center font-bold text-[24px] md:text-[36px]">
-          Celebrate life extraordinary moments through the lens of our passion
-          and expertise
-        </div>
-        <HomeImages ImageList={ImageList1} />
-        <HomeImages ImageList={ImageList2} /> */}
       </div>
       <ContactSocials />
       <Footer />

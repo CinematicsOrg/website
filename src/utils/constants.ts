@@ -26,7 +26,7 @@ export const galleryLinks: IServiceContent[] = [
     text: 'WEDDING',
     clickPath: '/gallery-wedding',
     content: 'Wedding',
-    img: `col-span-1 row-span-2 bg-[url('/images/cinematics_wedding.png')]`,
+    img: `col-span-1 row-span-2 bg-[url('/images/cinematics_wedding_gallery.png')]`,
   },
   {
     text: 'BIRTHDAY',
