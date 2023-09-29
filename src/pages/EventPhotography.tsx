@@ -79,7 +79,7 @@ const PackageList: IGeneralServicePackage[] = [
     hasFeaturesImg: false,
     hasDeliverableImg: false,
     hasDeliverableTitle: false,
-    deliverablesImgPath: '/images/cinematics_eventphotgraphy.png',
+    deliverablesImgPath: '/images/cinematics_eventphotgraphy_basic.png',
   },
 ];
 
