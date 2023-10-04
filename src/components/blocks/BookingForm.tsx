@@ -11,6 +11,8 @@ import { Formik } from 'formik';
 import { FadeLoader } from 'react-spinners';
 import TextAreaInput from '../TextAreaInput';
 
+const scriptUrl = import.meta.env.VITE_BOOKING_FORM_SCRIPT_URL;
+
 const BookingForm = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [formSubmitSuccess, setFormSubmitSuccess] = useState<boolean>(false);
@@ -27,9 +29,6 @@ const BookingForm = () => {
     eventTime: '',
     ...bookingFormChecklistInitialState,
   };
-
-  const scriptUrl =
-    'https://script.google.com/macros/s/AKfycbyUfsbPl5QH0x_2JzuWVQ7-sZz4iyafWNsythc8PcnU5Yu5vWe2NT4BO2Ux_702va5E/exec';
 
   const validate = (values: typeof initialState) => {
     const errors: {

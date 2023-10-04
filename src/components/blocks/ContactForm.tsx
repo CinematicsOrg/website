@@ -6,6 +6,8 @@ import FadeLoader from 'react-spinners/FadeLoader';
 import { Formik } from 'formik';
 import TextAreaInput from '../TextAreaInput';
 
+const scriptUrl = import.meta.env.VITE_CONTACT_FORM_SCRIPT_URL;
+
 const ContactForm = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [formSubmitSuccess, setFormSubmitSuccess] = useState<boolean>(false);
@@ -19,9 +21,6 @@ const ContactForm = () => {
     phone: '',
     enquiries: '',
   };
-
-  const scriptUrl =
-    'https://script.google.com/macros/s/AKfycbwuoGPJ5qNH01dx64uRnzqIwTnobflwV5TumptonP7WOoSNHhvupcSq3S7cd5ll6L8J/exec';
 
   const validate = (values: typeof initialState) => {
     const errors: {
