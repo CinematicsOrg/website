@@ -26,7 +26,7 @@ const TextAreaInput = ({
       <textarea
         id={id}
         onBlur={onBlur}
-        className={`h-[300px]  text-[black] text-[20px] p-2 resize-none ${classDef}`}
+        className={`h-[300px]  text-[black] dark:text-[white] text-[20px] p-2 resize-none ${classDef}`}
         name={name}
         onChange={changed}
         value={value}

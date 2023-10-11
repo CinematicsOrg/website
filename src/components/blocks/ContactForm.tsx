@@ -21,6 +21,7 @@ const ContactForm = () => {
     phone: '',
     enquiries: '',
   };
+  console.log({ scriptUrl });
 
   const validate = (values: typeof initialState) => {
     const errors: {
